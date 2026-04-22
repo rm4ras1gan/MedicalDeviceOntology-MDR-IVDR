@@ -1,0 +1,4573 @@
+{
+  "_comment": "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org [Additional Information added by WebVOWL Exporter Version: 1.1.7]",
+  "header": {
+    "languages": [
+      "undefined",
+      "en"
+    ],
+    "baseIris": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+      "http://www.w3.org/2000/01/rdf-schema",
+      "http://www.w3.org/2001/XMLSchema",
+      "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "http://xmlns.com/foaf/0.1",
+      "http://www.w3.org/2004/02/skos/core"
+    ],
+    "prefixList": {
+      "swrl": "http://www.w3.org/2003/11/swrl#",
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dbpedia": "http://dbpedia.org/resource/",
+      "dcterms": "http://purl.org/dc/terms/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#",
+      "xml": "http://www.w3.org/XML/1998/namespace",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    "title": {
+      "en": "Ontology of Medical Devices Regulated under the European MDR/IVDR Framework"
+    },
+    "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+    "author": [
+      "Regie Marasigan"
+    ],
+    "description": {
+      "en": "The ontology of medical devices regulated under the European MDR/IVDR framework is designed to structure and represent information about medical devices, especially high-risk devices and in vitro diagnostic devices. This ontology models the relationship between the main elements of the domain: the devices, the manufacturers, the identified risks, the safety corrective actions, and the reported incidents. This makes it possible to keep all the information organized in one place, making it more accessible and useful for everyone."
+    },
+    "other": {
+      "creator": [
+        {
+          "identifier": "creator",
+          "language": "en",
+          "value": "Regie Marasigan",
+          "type": "label"
+        }
+      ],
+      "title": [
+        {
+          "identifier": "title",
+          "language": "en",
+          "value": "Ontology of Medical Devices Regulated under the European MDR/IVDR Framework",
+          "type": "label"
+        }
+      ]
+    }
+  },
+  "namespace": [],
+  "settings": {
+    "global": {
+      "zoom": "0.74",
+      "translation": [
+        4.44,
+        320.67
+      ],
+      "paused": false
+    },
+    "gravity": {
+      "classDistance": 290,
+      "datatypeDistance": 120
+    },
+    "filter": {
+      "checkBox": [
+        {
+          "id": "datatypeFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "objectPropertyFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "subclassFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "disjointFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "setoperatorFilterCheckbox",
+          "checked": false
+        }
+      ],
+      "degreeSliderValue": "0"
+    },
+    "modes": {
+      "checkBox": [
+        {
+          "id": "pickandpinModuleCheckbox",
+          "checked": true
+        },
+        {
+          "id": "nodescalingModuleCheckbox",
+          "checked": true
+        },
+        {
+          "id": "compactnotationModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "colorexternalsModuleCheckbox",
+          "checked": true
+        }
+      ],
+      "colorSwitchState": false
+    }
+  },
+  "class": [
+    {
+      "id": "8",
+      "type": "owl:Class"
+    },
+    {
+      "id": "12",
+      "type": "owl:Class"
+    },
+    {
+      "id": "25",
+      "type": "owl:Class"
+    },
+    {
+      "id": "33",
+      "type": "owl:Class"
+    },
+    {
+      "id": "42",
+      "type": "owl:Class"
+    },
+    {
+      "id": "43",
+      "type": "owl:Class"
+    },
+    {
+      "id": "45",
+      "type": "owl:Class"
+    },
+    {
+      "id": "47",
+      "type": "owl:Class"
+    },
+    {
+      "id": "15",
+      "type": "owl:Class"
+    },
+    {
+      "id": "55",
+      "type": "owl:Class"
+    },
+    {
+      "id": "58",
+      "type": "owl:Class"
+    },
+    {
+      "id": "60",
+      "type": "owl:Class"
+    },
+    {
+      "id": "71",
+      "type": "owl:Class"
+    },
+    {
+      "id": "73",
+      "type": "owl:Class"
+    },
+    {
+      "id": "80",
+      "type": "owl:Class"
+    },
+    {
+      "id": "81",
+      "type": "owl:Class"
+    },
+    {
+      "id": "32",
+      "type": "owl:Class"
+    },
+    {
+      "id": "22",
+      "type": "owl:Class"
+    },
+    {
+      "id": "95",
+      "type": "owl:Class"
+    },
+    {
+      "id": "97",
+      "type": "owl:Class"
+    },
+    {
+      "id": "37",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "49",
+      "type": "owl:Class"
+    },
+    {
+      "id": "9",
+      "type": "owl:Class"
+    },
+    {
+      "id": "57",
+      "type": "owl:Class"
+    },
+    {
+      "id": "111",
+      "type": "owl:Class"
+    },
+    {
+      "id": "112",
+      "type": "owl:Class"
+    },
+    {
+      "id": "105",
+      "type": "owl:Class"
+    },
+    {
+      "id": "113",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "79",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "18",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "20",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "50",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "110",
+      "type": "owl:Class"
+    },
+    {
+      "id": "114",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "115",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "70",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "68",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "99",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "103",
+      "type": "owl:Class"
+    },
+    {
+      "id": "118",
+      "type": "owl:Class"
+    },
+    {
+      "id": "54",
+      "type": "owl:Class"
+    },
+    {
+      "id": "109",
+      "type": "owl:Class"
+    },
+    {
+      "id": "66",
+      "type": "owl:Class"
+    },
+    {
+      "id": "133",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "101",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "24",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "108",
+      "type": "owl:Class"
+    },
+    {
+      "id": "126",
+      "type": "owl:Class"
+    },
+    {
+      "id": "4",
+      "type": "owl:Class"
+    },
+    {
+      "id": "135",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "94",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "75",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "104",
+      "type": "owl:Class"
+    },
+    {
+      "id": "117",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "2",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "63",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "136",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "52",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "41",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "5",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "123",
+      "type": "owl:Class"
+    },
+    {
+      "id": "137",
+      "type": "owl:Class"
+    },
+    {
+      "id": "138",
+      "type": "owl:Class"
+    },
+    {
+      "id": "59",
+      "type": "owl:Class"
+    },
+    {
+      "id": "91",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "7",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "27",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "143",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "140",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "77",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "144",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "29",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "142",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "44",
+      "type": "owl:Class"
+    },
+    {
+      "id": "155",
+      "type": "owl:Class"
+    },
+    {
+      "id": "61",
+      "type": "owl:Class"
+    },
+    {
+      "id": "72",
+      "type": "owl:Class"
+    },
+    {
+      "id": "89",
+      "type": "owl:Class"
+    },
+    {
+      "id": "31",
+      "type": "owl:Class"
+    },
+    {
+      "id": "14",
+      "type": "owl:Class"
+    },
+    {
+      "id": "102",
+      "type": "owl:Class"
+    },
+    {
+      "id": "106",
+      "type": "owl:Class"
+    },
+    {
+      "id": "11",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "1",
+      "type": "owl:Class"
+    },
+    {
+      "id": "148",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "17",
+      "type": "owl:Thing"
+    },
+    {
+      "id": "82",
+      "type": "owl:Class"
+    },
+    {
+      "id": "35",
+      "type": "owl:Class"
+    },
+    {
+      "id": "154",
+      "type": "owl:Class"
+    },
+    {
+      "id": "107",
+      "type": "owl:Class"
+    },
+    {
+      "id": "130",
+      "type": "owl:Class"
+    },
+    {
+      "id": "88",
+      "type": "owl:Class"
+    },
+    {
+      "id": "83",
+      "type": "owl:Class"
+    },
+    {
+      "id": "153",
+      "type": "owl:Class"
+    },
+    {
+      "id": "84",
+      "type": "owl:Class"
+    },
+    {
+      "id": "124",
+      "type": "owl:Class"
+    },
+    {
+      "id": "39",
+      "type": "owl:Class"
+    }
+  ],
+  "classAttribute": [
+    {
+      "id": "8",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#InjuryRisk",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "InjuryRisk",
+        "en": "InjuryRisk"
+      },
+      "comment": {
+        "en": "Risk of physical harm caused by the device."
+      },
+      "pos": [
+        -186.1,
+        -122.77
+      ]
+    },
+    {
+      "id": "12",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#MaterialRisk",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "MaterialRisk",
+        "en": "MaterialRisk"
+      },
+      "comment": {
+        "en": "Risk caused by the materials used in the device."
+      },
+      "pos": [
+        -308.42,
+        374.02
+      ]
+    },
+    {
+      "id": "25",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ContaminationRisk",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "ContaminationRisk",
+        "en": "ContaminationRisk"
+      },
+      "comment": {
+        "en": "Risk related to contamination of the device"
+      },
+      "pos": [
+        -242.3,
+        -41.95
+      ]
+    },
+    {
+      "id": "33",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Country",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "Country",
+        "en": "Country"
+      },
+      "comment": {
+        "en": "Country used to indicate where a manufacturer is based or where an incident was reported."
+      },
+      "individuals": [
+        {
+          "iri": "http://dbpedia.org/resource/Ireland",
+          "labels": {
+            "IRI-based": "Ireland"
+          }
+        },
+        {
+          "iri": "http://dbpedia.org/resource/France",
+          "labels": {
+            "IRI-based": "France"
+          }
+        },
+        {
+          "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#France",
+          "labels": {
+            "IRI-based": "France",
+            "en": "France"
+          }
+        },
+        {
+          "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Ireland",
+          "labels": {
+            "IRI-based": "Ireland",
+            "en": "Ireland"
+          }
+        }
+      ],
+      "pos": [
+        1300.82,
+        520.54
+      ],
+      "pinned": true
+    },
+    {
+      "id": "42",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#InfectionRisk",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "InfectionRisk",
+        "en": "InfectionRisk"
+      },
+      "comment": {
+        "en": "Risk of  spreading infection."
+      },
+      "pos": [
+        -202.59,
+        605.63
+      ]
+    },
+    {
+      "id": "43",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ActiveDevice",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "ActiveDevice",
+        "en": "ActiveDevice"
+      },
+      "comment": {
+        "en": "Device that depends on a source of energy to work."
+      },
+      "pos": [
+        340.76,
+        -553.76
+      ]
+    },
+    {
+      "id": "45",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RadiationRisk",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "RadiationRisk",
+        "en": "RadiationRisk"
+      },
+      "comment": {
+        "en": "Risk linked to radiation exposure from the device."
+      },
+      "pos": [
+        -251.92,
+        528.46
+      ]
+    },
+    {
+      "id": "47",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ImplantableDevice",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "ImplantableDevice",
+        "en": "ImplantableDevice"
+      },
+      "comment": {
+        "en": "Device intended to be introduced into the body and remain there."
+      },
+      "pos": [
+        562.42,
+        -692.88
+      ]
+    },
+    {
+      "id": "15",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CompetentAuthority",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "CompetentAuthority",
+        "en": "CompetentAuthority"
+      },
+      "comment": {
+        "en": "Public authority responsible for supervising medical device regulation."
+      },
+      "individuals": [
+        {
+          "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#HPRA",
+          "labels": {
+            "IRI-based": "HPRA",
+            "en": "HPRA"
+          }
+        }
+      ],
+      "pos": [
+        1632.34,
+        451.96
+      ],
+      "pinned": true
+    },
+    {
+      "id": "55",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#InterferenceRisk",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "InterferenceRisk",
+        "en": "InterferenceRisk"
+      },
+      "comment": {
+        "en": "Risk caused by interference with other devices"
+      },
+      "pos": [
+        -281.34,
+        39.78
+      ]
+    },
+    {
+      "id": "58",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Medium",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "Medium",
+        "en": "Medium"
+      },
+      "comment": {
+        "en": "Probability level used when the risk has a moderate chance of happening."
+      },
+      "pos": [
+        233.56,
+        35.9
+      ],
+      "pinned": true
+    },
+    {
+      "id": "60",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#IVDR",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "IVDR",
+        "en": "IVDR"
+      },
+      "comment": {
+        "en": "European regulation used for in vitro diagnostic medical devices."
+      },
+      "pos": [
+        1727.56,
+        49.82
+      ],
+      "pinned": true
+    },
+    {
+      "id": "71",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Recall",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "Recall",
+        "en": "Recall"
+      },
+      "comment": {
+        "en": "A corrective action type that removes affected devices from use."
+      },
+      "pos": [
+        1310.63,
+        1322.62
+      ]
+    },
+    {
+      "id": "73",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#MalfunctionRisk",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "MalfunctionRisk",
+        "en": "MalfunctionRisk"
+      },
+      "comment": {
+        "en": "A risk related to the device not functioning properly."
+      },
+      "pos": [
+        -319.55,
+        289.97
+      ]
+    },
+    {
+      "id": "80",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Low",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "Low",
+        "en": "Low"
+      },
+      "comment": {
+        "en": "A probability level used when the risk is unlikely to happen."
+      },
+      "pos": [
+        304.54,
+        -149.27
+      ],
+      "pinned": true
+    },
+    {
+      "id": "81",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Severity",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "Severity",
+        "en": "Severity"
+      },
+      "comment": {
+        "en": "Level used to express how serious the consequences of a risk may be."
+      },
+      "pos": [
+        515.78,
+        359.41
+      ],
+      "pinned": true
+    },
+    {
+      "id": "32",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskClass",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "RiskClass",
+        "en": "RiskClass"
+      },
+      "comment": {
+        "en": "Regulatory class used to indicate the level of risk of a device."
+      },
+      "pos": [
+        1111.65,
+        -234.12
+      ],
+      "pinned": true
+    },
+    {
+      "id": "22",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "Risk",
+        "en": "Risk"
+      },
+      "comment": {
+        "en": "Problem associated with a device, an incident, or its use."
+      },
+      "individuals": [
+        {
+          "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RSK_009",
+          "labels": {
+            "IRI-based": "RSK_009",
+            "en": "RSK-009"
+          }
+        }
+      ],
+      "pos": [
+        715.61,
+        193.5
+      ],
+      "pinned": true
+    },
+    {
+      "id": "95",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#InSituCorrection",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "InSituCorrection",
+        "en": "InSituCorrection"
+      },
+      "comment": {
+        "en": "Corrective action type applied directly where the device is being used."
+      },
+      "pos": [
+        955.97,
+        1417.07
+      ]
+    },
+    {
+      "id": "97",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#SingleUseDevice",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "SingleUseDevice",
+        "en": "SingleUseDevice"
+      },
+      "comment": {
+        "en": "Device intended to be used only once."
+      },
+      "pos": [
+        484.13,
+        -659.73
+      ]
+    },
+    {
+      "id": "37",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1981.98,
+        641.84
+      ]
+    },
+    {
+      "id": "49",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "Incident",
+        "en": "Incident"
+      },
+      "comment": {
+        "en": "Reported event related to a medical device"
+      },
+      "individuals": [
+        {
+          "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#INC_002",
+          "labels": {
+            "IRI-based": "INC_002",
+            "en": "INC-002"
+          }
+        }
+      ],
+      "pos": [
+        979.78,
+        219.5
+      ],
+      "pinned": true
+    },
+    {
+      "id": "9",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskType",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "RiskType",
+        "en": "RiskType"
+      },
+      "comment": {
+        "en": "Specific kind of risk involved in a device or incident."
+      },
+      "pos": [
+        295.91,
+        241.71
+      ],
+      "pinned": true
+    },
+    {
+      "id": "57",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskCategory",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "RiskCategory",
+        "en": "RiskCategory"
+      },
+      "comment": {
+        "en": "Used to organise risks into common themes."
+      },
+      "pos": [
+        649.51,
+        546.28
+      ],
+      "pinned": true
+    },
+    {
+      "id": "111",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#SafetyAlert",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "SafetyAlert",
+        "en": "SafetyAlert"
+      },
+      "comment": {
+        "en": "Corrective action type that warns about an urgent safety issue."
+      },
+      "pos": [
+        1082.13,
+        1409.29
+      ]
+    },
+    {
+      "id": "112",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#NearMissIncident",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "NearMissIncident",
+        "en": "NearMissIncident"
+      },
+      "comment": {
+        "en": "Incident that could have caused harm but did not."
+      },
+      "pos": [
+        1389.24,
+        738.45
+      ],
+      "pinned": true
+    },
+    {
+      "id": "105",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DiagnosticError",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "DiagnosticError",
+        "en": "DiagnosticError"
+      },
+      "comment": {
+        "en": "Risk related to wrong or misleading diagnostic results."
+      },
+      "pos": [
+        169.61,
+        970.13
+      ]
+    },
+    {
+      "id": "113",
+      "iri": "http://www.w3.org/2001/XMLSchema#date",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "date"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1067.19,
+        938.41
+      ]
+    },
+    {
+      "id": "79",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        369.55,
+        268.44
+      ]
+    },
+    {
+      "id": "18",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "pos": [
+        37.28,
+        2370.14
+      ]
+    },
+    {
+      "id": "20",
+      "iri": "http://www.w3.org/2001/XMLSchema#boolean",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "boolean"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1373.03,
+        -478.63
+      ]
+    },
+    {
+      "id": "50",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1242.86,
+        487.1
+      ]
+    },
+    {
+      "id": "110",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DeviceFailure",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "DeviceFailure",
+        "en": "DeviceFailure"
+      },
+      "comment": {
+        "en": "A risk related to the device not working as expected."
+      },
+      "pos": [
+        116.09,
+        891.77
+      ]
+    },
+    {
+      "id": "114",
+      "iri": "http://www.w3.org/2001/XMLSchema#boolean",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "boolean"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1288.34,
+        174.97
+      ]
+    },
+    {
+      "id": "115",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1764.26,
+        276.89
+      ]
+    },
+    {
+      "id": "70",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1366.78,
+        364.9
+      ]
+    },
+    {
+      "id": "68",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1779.74,
+        148.11
+      ]
+    },
+    {
+      "id": "99",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        866.4,
+        -112.63
+      ]
+    },
+    {
+      "id": "103",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#SoftwareRisk",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "SoftwareRisk",
+        "en": "SoftwareRisk"
+      },
+      "comment": {
+        "en": "Risk caused by software faults"
+      },
+      "pos": [
+        -305.74,
+        118.57
+      ]
+    },
+    {
+      "id": "118",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#SeriousIncident",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "SeriousIncident",
+        "en": "SeriousIncident"
+      },
+      "comment": {
+        "en": "An incident with significant impact that requires special attention."
+      },
+      "pos": [
+        1209.72,
+        902.95
+      ],
+      "pinned": true
+    },
+    {
+      "id": "54",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#IncidentType",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "IncidentType",
+        "en": "IncidentType"
+      },
+      "comment": {
+        "en": "Category used to describe the kind of incident."
+      },
+      "pos": [
+        1133.04,
+        602.83
+      ],
+      "pinned": true
+    },
+    {
+      "id": "109",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ProductQuality",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "ProductQuality",
+        "en": "ProductQuality"
+      },
+      "comment": {
+        "en": "Risk linked to quality issues in the product."
+      },
+      "pos": [
+        368.48,
+        1128.54
+      ]
+    },
+    {
+      "id": "66",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Status",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "Status",
+        "en": "Status"
+      },
+      "comment": {
+        "en": "Value used to show the current state of a corrective action."
+      },
+      "pos": [
+        732.56,
+        750.63
+      ],
+      "pinned": true
+    },
+    {
+      "id": "133",
+      "iri": "http://www.w3.org/2001/XMLSchema#date",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "date"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        685.94,
+        956.48
+      ]
+    },
+    {
+      "id": "101",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        776.81,
+        460.97
+      ]
+    },
+    {
+      "id": "24",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1558.71,
+        -241.2
+      ]
+    },
+    {
+      "id": "108",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DevicePerformance",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "DevicePerformance",
+        "en": "DevicePerformance"
+      },
+      "comment": {
+        "en": "Risk related to reduced or incorrect device performance."
+      },
+      "pos": [
+        457.13,
+        1167.38
+      ]
+    },
+    {
+      "id": "126",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#MDR",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "MDR",
+        "en": "MDR"
+      },
+      "comment": {
+        "en": "The European regulation used for medical devices."
+      },
+      "pos": [
+        1685.45,
+        -212.31
+      ],
+      "pinned": true
+    },
+    {
+      "id": "4",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CorrectiveAction",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "CorrectiveAction",
+        "en": "CorrectiveAction"
+      },
+      "comment": {
+        "en": "Safety measure taken to control a detected problem."
+      },
+      "individuals": [
+        {
+          "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#FSCA_002",
+          "labels": {
+            "IRI-based": "FSCA_002",
+            "en": "FSCA-002"
+          }
+        }
+      ],
+      "pos": [
+        882.15,
+        531.4
+      ],
+      "pinned": true
+    },
+    {
+      "id": "135",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        981.43,
+        966.9
+      ]
+    },
+    {
+      "id": "94",
+      "iri": "http://www.w3.org/2001/XMLSchema#date",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "date"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1173.61,
+        529.04
+      ]
+    },
+    {
+      "id": "75",
+      "iri": "http://www.w3.org/2001/XMLSchema#date",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "date"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1315.53,
+        437.48
+      ]
+    },
+    {
+      "id": "104",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DiagnosticRisk",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "DiagnosticRisk",
+        "en": "DiagnosticRisk"
+      },
+      "comment": {
+        "en": "Risk linked to incorrect  diagnostic use."
+      },
+      "pos": [
+        -286.68,
+        450.3
+      ]
+    },
+    {
+      "id": "117",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1133.74,
+        885.03
+      ]
+    },
+    {
+      "id": "2",
+      "iri": "http://www.w3.org/2001/XMLSchema#boolean",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "boolean"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1578.23,
+        -96.83
+      ]
+    },
+    {
+      "id": "63",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1812.21,
+        221.61
+      ]
+    },
+    {
+      "id": "136",
+      "iri": "http://www.w3.org/2001/XMLSchema#boolean",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "boolean"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1483.96,
+        -328.85
+      ]
+    },
+    {
+      "id": "52",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        887.04,
+        954.57
+      ]
+    },
+    {
+      "id": "41",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1628.35,
+        820.95
+      ]
+    },
+    {
+      "id": "5",
+      "iri": "http://www.w3.org/2001/XMLSchema#integer",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "integer"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        875.79,
+        1024.42
+      ]
+    },
+    {
+      "id": "123",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Open",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "Open",
+        "en": "Open"
+      },
+      "comment": {
+        "en": "Status showing that the corrective action is still ongoing."
+      },
+      "pos": [
+        540.83,
+        895.9
+      ],
+      "pinned": true
+    },
+    {
+      "id": "137",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ImplantableActiveDevice",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "ImplantableActiveDevice",
+        "en": "ImplantableActiveDevice"
+      },
+      "comment": {
+        "en": "Active device designed to be implanted in the body."
+      },
+      "pos": [
+        408.51,
+        -613.25
+      ]
+    },
+    {
+      "id": "138",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#UserNotice",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "UserNotice",
+        "en": "UserNotice"
+      },
+      "comment": {
+        "en": "Corrective action type based on informing users about a safety issue."
+      },
+      "pos": [
+        1196.7,
+        1379.22
+      ]
+    },
+    {
+      "id": "59",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Probability",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "Probability",
+        "en": "Probability"
+      },
+      "comment": {
+        "en": "Level used to express how likely a risk is to happen."
+      },
+      "pos": [
+        524.95,
+        0.34
+      ],
+      "pinned": true
+    },
+    {
+      "id": "91",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1565.5,
+        -319.99
+      ]
+    },
+    {
+      "id": "7",
+      "iri": "http://www.w3.org/2001/XMLSchema#boolean",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "boolean"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1285.05,
+        -497.89
+      ]
+    },
+    {
+      "id": "27",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        347.23,
+        137.01
+      ]
+    },
+    {
+      "id": "143",
+      "iri": "http://www.w3.org/2001/XMLSchema#date",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "date"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1031.19,
+        -91.41
+      ]
+    },
+    {
+      "id": "140",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        344.05,
+        53.93
+      ]
+    },
+    {
+      "id": "77",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1780.42,
+        350.43
+      ]
+    },
+    {
+      "id": "144",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        801.04,
+        1022.73
+      ]
+    },
+    {
+      "id": "29",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1738.32,
+        425.41
+      ]
+    },
+    {
+      "id": "142",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1419.3,
+        -415.8
+      ]
+    },
+    {
+      "id": "44",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DeviceType",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "DeviceType",
+        "en": "DeviceType"
+      },
+      "comment": {
+        "en": "General category used to group devices according to their intended use."
+      },
+      "pos": [
+        771.4,
+        -107.15
+      ],
+      "pinned": true
+    },
+    {
+      "id": "155",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#InVitroDiagnosticDevice",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "InVitroDiagnosticDevice",
+        "en": "InVitroDiagnosticDevice"
+      },
+      "comment": {
+        "en": "Device used to analyse samples outside the human body."
+      },
+      "pos": [
+        649.71,
+        -715.67
+      ]
+    },
+    {
+      "id": "61",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RegulatoryFramework",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "RegulatoryFramework",
+        "en": "RegulatoryFramework"
+      },
+      "comment": {
+        "en": "Legal framework under which a device is regulated."
+      },
+      "pos": [
+        1473.48,
+        -80.81
+      ],
+      "pinned": true
+    },
+    {
+      "id": "72",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ActionType",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "ActionType",
+        "en": "ActionType"
+      },
+      "comment": {
+        "en": "Category used to describe the kind of corrective action taken."
+      },
+      "pos": [
+        993.06,
+        797.33
+      ],
+      "pinned": true
+    },
+    {
+      "id": "89",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ClassC",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "ClassC",
+        "en": "ClassC"
+      },
+      "comment": {
+        "en": "Regulatory class for IVDR devices"
+      },
+      "pos": [
+        1284.51,
+        -379.63
+      ],
+      "pinned": true
+    },
+    {
+      "id": "31",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ClassD",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "ClassD",
+        "en": "ClassD"
+      },
+      "comment": {
+        "en": "Regulatory class for IVDR devices"
+      },
+      "pos": [
+        921.42,
+        -414.45
+      ],
+      "pinned": true
+    },
+    {
+      "id": "14",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "Manufacturer",
+        "en": "Manufacturer"
+      },
+      "comment": {
+        "en": "Company that makes a medical device on the market."
+      },
+      "individuals": [
+        {
+          "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#MAN_001",
+          "labels": {
+            "IRI-based": "MAN_001",
+            "en": "MAN-001"
+          }
+        },
+        {
+          "iri": "http://dbpedia.org/resource/Medtronic",
+          "labels": {
+            "IRI-based": "Medtronic"
+          }
+        }
+      ],
+      "pos": [
+        1341.42,
+        213
+      ],
+      "pinned": true
+    },
+    {
+      "id": "102",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CybersecurityRisk",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "CybersecurityRisk",
+        "en": "CybersecurityRisk"
+      },
+      "comment": {
+        "en": "Risk related to digital security problems affecting the device."
+      },
+      "pos": [
+        -318.77,
+        204.06
+      ]
+    },
+    {
+      "id": "106",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DeviceSafety",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "DeviceSafety",
+        "en": "DeviceSafety"
+      },
+      "comment": {
+        "en": "Risk directly linked to the safe use of the device."
+      },
+      "pos": [
+        294.34,
+        1087.1
+      ]
+    },
+    {
+      "id": "11",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1499.92,
+        -408.07
+      ]
+    },
+    {
+      "id": "1",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "Device",
+        "en": "Device"
+      },
+      "comment": {
+        "en": "Medical device registered with its main technical and regulatory details."
+      },
+      "individuals": [
+        {
+          "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DEV_002",
+          "labels": {
+            "IRI-based": "DEV_002",
+            "en": "DEV-002"
+          }
+        }
+      ],
+      "pos": [
+        1169.08,
+        -25.48
+      ],
+      "pinned": true
+    },
+    {
+      "id": "148",
+      "iri": "http://www.w3.org/2001/XMLSchema#integer",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "integer"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        722.08,
+        88.17
+      ]
+    },
+    {
+      "id": "17",
+      "iri": "http://www.w3.org/2002/07/owl#Thing",
+      "baseIri": "http://owl2vowl.de",
+      "label": {
+        "undefined": "Thing"
+      },
+      "pos": [
+        -161.08,
+        2296.74
+      ]
+    },
+    {
+      "id": "82",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Moderate",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "Moderate",
+        "en": "Moderate"
+      },
+      "comment": {
+        "en": "Severity level used when the consequences are noticeable but limited."
+      },
+      "pos": [
+        231.1,
+        612.68
+      ],
+      "pinned": true
+    },
+    {
+      "id": "35",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ClassIII",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "ClassIII",
+        "en": "ClassIII"
+      },
+      "comment": {
+        "en": "Regulatory class for MDR devices"
+      },
+      "pos": [
+        810.8,
+        -310.81
+      ],
+      "pinned": true
+    },
+    {
+      "id": "154",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ActiveImplant",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "ActiveImplant",
+        "en": "ActiveImplant"
+      },
+      "comment": {
+        "en": "An active device intended to remain inside the body."
+      },
+      "pos": [
+        276.44,
+        -478.61
+      ]
+    },
+    {
+      "id": "107",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#PatientHarm",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "PatientHarm",
+        "en": "PatientHarm"
+      },
+      "comment": {
+        "en": "Risk involving harm to the patient."
+      },
+      "pos": [
+        227.58,
+        1033.45
+      ]
+    },
+    {
+      "id": "130",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#High",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "High",
+        "en": "High"
+      },
+      "comment": {
+        "en": "Probability level used when the risk is high to happen."
+      },
+      "pos": [
+        523.27,
+        -257.7
+      ],
+      "pinned": true
+    },
+    {
+      "id": "88",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ClassIIb",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "ClassIIb",
+        "en": "ClassIIb"
+      },
+      "comment": {
+        "en": "Regulatory class for MDR devices"
+      },
+      "pos": [
+        1156.33,
+        -470.67
+      ],
+      "pinned": true
+    },
+    {
+      "id": "83",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Critical",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "Critical",
+        "en": "Critical"
+      },
+      "comment": {
+        "undefined": "Severity level used when the consequences require inmediate attention."
+      },
+      "pos": [
+        371.24,
+        696.02
+      ],
+      "pinned": true
+    },
+    {
+      "id": "153",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#SelfTestDevice",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "SelfTestDevice",
+        "en": "SelfTestDevice"
+      },
+      "comment": {
+        "en": "Diagnostic device intended to be used directly by the user."
+      },
+      "pos": [
+        749.29,
+        -728.02
+      ]
+    },
+    {
+      "id": "84",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Serious",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "Serious",
+        "en": "Serious"
+      },
+      "comment": {
+        "en": "Severity level used when the consequences are important and require attention."
+      },
+      "pos": [
+        149.72,
+        469.47
+      ],
+      "pinned": true
+    },
+    {
+      "id": "124",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Closed",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "Closed",
+        "en": "Closed"
+      },
+      "comment": {
+        "en": "Status showing that the corrective action is closed"
+      },
+      "pos": [
+        746.13,
+        991.06
+      ],
+      "pinned": true
+    },
+    {
+      "id": "39",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ClassIIa",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "ClassIIa",
+        "en": "ClassIIa"
+      },
+      "comment": {
+        "en": "Regulatory class for MDR devices"
+      },
+      "pos": [
+        1024.05,
+        -503.4
+      ],
+      "pinned": true
+    }
+  ],
+  "property": [
+    {
+      "id": "0",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "3",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "6",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "10",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "13",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "16",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "19",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "21",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "23",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "26",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "28",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "30",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "34",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "36",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "38",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "40",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "46",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "48",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "51",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "53",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "56",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "62",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "64",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "65",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "67",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "69",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "74",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "76",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "78",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "85",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "86",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "87",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "90",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "92",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "93",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "96",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "98",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "100",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "116",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "119",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "120",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "121",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "122",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "125",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "127",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "128",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "129",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "131",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "132",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "134",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "139",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "141",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "145",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "146",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "147",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "149",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "150",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "151",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "152",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "156",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "157",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "158",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "159",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "160",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "161",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "162",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "163",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "164",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "165",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "166",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "167",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "168",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "169",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "170",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "171",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "172",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "173",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "174",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "175",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "176",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "177",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "178",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "179",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "180",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "181",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "182",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "183",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "184",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "185",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "186",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "187",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "188",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "189",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "190",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "191",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "192",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "193",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "194",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "195",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "196",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "197",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "198",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "199",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "200",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "201",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "202",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "203",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "204",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "205",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "206",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "207",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "208",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "209",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "210",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "211",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "212",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "213",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "214",
+      "type": "rdfs:subClassOf"
+    }
+  ],
+  "propertyAttribute": [
+    {
+      "id": "0",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#is_reusable",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "is_reusable",
+        "en": "is_reusable"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Indicates whether the device is intended to be reused."
+      },
+      "domain": "1",
+      "range": "2",
+      "pos": [
+        1387.73,
+        -63.61
+      ]
+    },
+    {
+      "id": "3",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#devices_affected",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "devices_affected",
+        "en": "devices_affected"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Stores the number of devices affected."
+      },
+      "domain": "4",
+      "range": "5",
+      "pos": [
+        878.65,
+        803.18
+      ]
+    },
+    {
+      "id": "6",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#is_active",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "is_active",
+        "en": "is_active"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Indicates whether the device depends on a source of energy to work."
+      },
+      "domain": "1",
+      "range": "7",
+      "pos": [
+        1233.05,
+        -286.08
+      ]
+    },
+    {
+      "id": "10",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#intended_purpose",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "intended_purpose",
+        "en": "intended_purpose"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Stores the main purpose for which the device is intended."
+      },
+      "domain": "1",
+      "range": "11",
+      "pos": [
+        1349.98,
+        -234.67
+      ]
+    },
+    {
+      "id": "13",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasCompetentAuthority",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "hasCompetentAuthority",
+        "en": "hasCompetentAuthority"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "en": "Links a manufacturer to the authority responsible for its regulatory oversight."
+      },
+      "domain": "14",
+      "range": "15",
+      "pos": [
+        1488.14,
+        333.51
+      ]
+    },
+    {
+      "id": "16",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#description",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "description",
+        "en": "description"
+      },
+      "comment": {
+        "en": "Stores a short explanation of the element being described."
+      },
+      "domain": "17",
+      "range": "18",
+      "pos": [
+        -60.08,
+        2334.11
+      ]
+    },
+    {
+      "id": "19",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#is_implantable",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "is_implantable",
+        "en": "is_implantable"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Indicates whether the device is meant to be implanted in the body."
+      },
+      "domain": "1",
+      "range": "20",
+      "pos": [
+        1281.23,
+        -274.66
+      ]
+    },
+    {
+      "id": "21",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRiskType",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "hasRiskType",
+        "en": "hasRiskType"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "en": "Specifies the kind of risk involved."
+      },
+      "domain": "22",
+      "range": "9",
+      "pos": [
+        500.52,
+        218.21
+      ]
+    },
+    {
+      "id": "23",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#device_name",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "device_name",
+        "en": "device_name"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Stores the name of the device."
+      },
+      "domain": "1",
+      "range": "24",
+      "pos": [
+        1381.35,
+        -143
+      ]
+    },
+    {
+      "id": "26",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#risk_name",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "risk_name",
+        "en": "risk_name"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Stores the name to identify the risk."
+      },
+      "domain": "22",
+      "range": "27",
+      "pos": [
+        513.74,
+        162.55
+      ]
+    },
+    {
+      "id": "28",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#authorization_number",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "authorization_number",
+        "en": "authorization_number"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Stores the regulatory authorisation number linked to the manufacturer."
+      },
+      "domain": "14",
+      "range": "29",
+      "pos": [
+        1558.65,
+        329.25
+      ]
+    },
+    {
+      "id": "30",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "31",
+      "range": "32",
+      "pos": [
+        1016.53,
+        -324.29
+      ]
+    },
+    {
+      "id": "34",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "35",
+      "range": "32",
+      "pos": [
+        961.22,
+        -272.47
+      ]
+    },
+    {
+      "id": "36",
+      "iri": "http://xmlns.com/foaf/0.1/name",
+      "baseIri": "http://xmlns.com/foaf/0.1",
+      "label": {
+        "IRI-based": "name",
+        "en": "name"
+      },
+      "attributes": [
+        "datatype",
+        "external"
+      ],
+      "comment": {
+        "en": "Stores the official name of the authority."
+      },
+      "domain": "15",
+      "range": "37",
+      "pos": [
+        1824.55,
+        556.35
+      ]
+    },
+    {
+      "id": "38",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "39",
+      "range": "32",
+      "pos": [
+        1067.85,
+        -368.76
+      ]
+    },
+    {
+      "id": "40",
+      "iri": "http://www.w3.org/2004/02/skos/core#prefLabel",
+      "baseIri": "http://www.w3.org/2004/02/skos/core",
+      "label": {
+        "IRI-based": "prefLabel",
+        "en": "pref_label"
+      },
+      "attributes": [
+        "datatype",
+        "external"
+      ],
+      "comment": {
+        "en": "Stores the preferred label used for a country."
+      },
+      "domain": "33",
+      "range": "41",
+      "pos": [
+        1484.14,
+        688.69
+      ]
+    },
+    {
+      "id": "46",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasDeviceType",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "hasDeviceType",
+        "en": "hasDeviceType"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "en": "Assigns a device to its device type category."
+      },
+      "domain": "1",
+      "range": "44",
+      "pos": [
+        965.08,
+        -67.37
+      ]
+    },
+    {
+      "id": "48",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#patient_sex",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "patient_sex",
+        "en": "patient_sex"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Stores the sex of the patient involved."
+      },
+      "domain": "49",
+      "range": "50",
+      "pos": [
+        1127.63,
+        369.89
+      ]
+    },
+    {
+      "id": "51",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#countries_affected",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "countries_affected",
+        "en": "countries_affected"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Stores the countries affected by the corrective action."
+      },
+      "domain": "4",
+      "range": "52",
+      "pos": [
+        884.89,
+        768.26
+      ]
+    },
+    {
+      "id": "53",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasIncidentType",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "hasIncidentType",
+        "en": "hasIncidentType"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "en": "Assigns an incident to its incident type."
+      },
+      "domain": "49",
+      "range": "54",
+      "pos": [
+        1058.37,
+        416.06
+      ]
+    },
+    {
+      "id": "56",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRiskCategory",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "hasRiskCategory",
+        "en": "hasRiskCategory"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "en": "Places a risk under a broader risk category."
+      },
+      "domain": "22",
+      "range": "57",
+      "pos": [
+        681.59,
+        375.08
+      ]
+    },
+    {
+      "id": "62",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#manufacturer_id",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "manufacturer_id",
+        "en": "manufacturer_id"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Stores the identifier used to recognise a manufacturer in the dataset."
+      },
+      "domain": "14",
+      "range": "63",
+      "pos": [
+        1596.46,
+        217.67
+      ]
+    },
+    {
+      "id": "64",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRiskClass",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "hasRiskClass",
+        "en": "hasRiskClass"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "en": "Associates a device with its regulatory risk class."
+      },
+      "domain": "1",
+      "range": "32",
+      "pos": [
+        1138.96,
+        -134.88
+      ]
+    },
+    {
+      "id": "65",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasStatus",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "hasStatus",
+        "en": "hasStatus"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "en": "Shows the current status of a corrective action."
+      },
+      "domain": "4",
+      "range": "66",
+      "pos": [
+        804.39,
+        645.37
+      ]
+    },
+    {
+      "id": "67",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#contact_email",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "contact_email",
+        "en": "contact_email"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Stores the email address used to contact the manufacturer."
+      },
+      "domain": "14",
+      "range": "68",
+      "pos": [
+        1579.88,
+        177.7
+      ]
+    },
+    {
+      "id": "69",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#outcome",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "outcome",
+        "en": "outcome"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Stores the result or consequence of the incident."
+      },
+      "domain": "49",
+      "range": "70",
+      "pos": [
+        1189.37,
+        298.24
+      ]
+    },
+    {
+      "id": "74",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#event_date",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "event_date",
+        "en": "event_date"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Stores the date of the incident."
+      },
+      "domain": "49",
+      "range": "75",
+      "pos": [
+        1165.35,
+        339.97
+      ]
+    },
+    {
+      "id": "76",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#name",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "name",
+        "en": "name"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Stores the official name of the manufacturer."
+      },
+      "domain": "14",
+      "range": "77",
+      "pos": [
+        1579.11,
+        287.41
+      ]
+    },
+    {
+      "id": "78",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#risk_id",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "risk_id",
+        "en": "risk_id"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Stores the identifier of the risk."
+      },
+      "domain": "22",
+      "range": "79",
+      "pos": [
+        525.24,
+        234.72
+      ]
+    },
+    {
+      "id": "85",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRegulatoryFramework",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "hasRegulatoryFramework",
+        "en": "hasRegulatoryFramework"
+      },
+      "comment": {
+        "en": "States which regulatory framework applies to the device."
+      },
+      "domain": "1",
+      "range": "61",
+      "pos": [
+        1326.47,
+        -54.09
+      ]
+    },
+    {
+      "id": "86",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#affectedDeviceType",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "affectedDeviceType",
+        "en": "affectedDeviceType"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "en": "Indicates which type of device is affected by the risk."
+      },
+      "domain": "22",
+      "range": "44",
+      "pos": [
+        744.47,
+        37.99
+      ]
+    },
+    {
+      "id": "87",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#countryReported",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "countryReported",
+        "en": "countryReported"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "en": "Shows the country where the incident was reported."
+      },
+      "domain": "49",
+      "range": "33",
+      "pos": [
+        1137.63,
+        367.51
+      ]
+    },
+    {
+      "id": "90",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#device_id",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "device_id",
+        "en": "device_id"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Stores the identifier used to recognise a device in the dataset."
+      },
+      "domain": "1",
+      "range": "91",
+      "pos": [
+        1384.86,
+        -185.79
+      ]
+    },
+    {
+      "id": "92",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasSeverity",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "hasSeverity",
+        "en": "hasSeverity"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "en": "Shows how serious the risk may be."
+      },
+      "domain": "22",
+      "range": "81",
+      "pos": [
+        611.64,
+        279.82
+      ]
+    },
+    {
+      "id": "93",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#report_date",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "report_date",
+        "en": "report_date"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Stores the reported date of the incident."
+      },
+      "domain": "49",
+      "range": "94",
+      "pos": [
+        1089.63,
+        394.93
+      ]
+    },
+    {
+      "id": "96",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "hasManufacturer",
+        "en": "hasManufacturer"
+      },
+      "attributes": [
+        "functional"
+      ],
+      "comment": {
+        "en": "Connects a device with the company that manufactures it."
+      },
+      "domain": "1",
+      "range": "14",
+      "pos": [
+        1254.3,
+        92.45
+      ]
+    },
+    {
+      "id": "98",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#eudamed_incident_ref",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "eudamed_incident_ref",
+        "en": "eudamed_incident_ref"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Stores the reference code assigned to the incident in EUDAMED."
+      },
+      "domain": "49",
+      "range": "99",
+      "pos": [
+        915.02,
+        29.79
+      ]
+    },
+    {
+      "id": "100",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#incident_id",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "incident_id",
+        "en": "incident_id"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Stores the identifier used to recognise an incident."
+      },
+      "domain": "49",
+      "range": "101",
+      "pos": [
+        863.02,
+        358.41
+      ]
+    },
+    {
+      "id": "116",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#scope",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "scope",
+        "en": "scope"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Stores a short description of the scope of the corrective action."
+      },
+      "domain": "4",
+      "range": "117",
+      "pos": [
+        1021.94,
+        727.89
+      ]
+    },
+    {
+      "id": "119",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "hasRisk",
+        "en": "hasRisk"
+      },
+      "attributes": [
+        "someValues"
+      ],
+      "comment": {
+        "en": "Relates an incident to the risk identified in that case."
+      },
+      "domain": "49",
+      "range": "22",
+      "pos": [
+        803.07,
+        388.11
+      ]
+    },
+    {
+      "id": "120",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "82",
+      "range": "84"
+    },
+    {
+      "id": "121",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "118",
+      "range": "112"
+    },
+    {
+      "id": "122",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "123",
+      "range": "124"
+    },
+    {
+      "id": "125",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "126",
+      "range": "60"
+    },
+    {
+      "id": "127",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "83",
+      "range": "84"
+    },
+    {
+      "id": "128",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "83",
+      "range": "82"
+    },
+    {
+      "id": "129",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "80",
+      "range": "130"
+    },
+    {
+      "id": "131",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "58",
+      "range": "80"
+    },
+    {
+      "id": "132",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "58",
+      "range": "130"
+    },
+    {
+      "id": "134",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#action_date",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "action_date",
+        "en": "action_date"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Stores the date on which the corrective action was launched."
+      },
+      "domain": "4",
+      "range": "113",
+      "pos": [
+        984.93,
+        757.46
+      ]
+    },
+    {
+      "id": "139",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#imdrf_code",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "imdrf_code",
+        "en": "imdrf_code"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Stores the IMDRF code used to classify the risk."
+      },
+      "domain": "22",
+      "range": "140",
+      "pos": [
+        513.74,
+        117.67
+      ]
+    },
+    {
+      "id": "141",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#udi_di",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "udi_di",
+        "en": "udi_di"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Stores the device identifier used in the UDI system."
+      },
+      "domain": "1",
+      "range": "142",
+      "pos": [
+        1307.32,
+        -241.12
+      ]
+    },
+    {
+      "id": "145",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#fsca_id",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "fsca_id",
+        "en": "fsca_id"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Stores the identifier used to recognise a corrective action."
+      },
+      "domain": "4",
+      "range": "144",
+      "pos": [
+        837.49,
+        801.94
+      ]
+    },
+    {
+      "id": "146",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "118",
+      "range": "54",
+      "pos": [
+        1171.38,
+        752.89
+      ]
+    },
+    {
+      "id": "147",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#patient_age",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "patient_age",
+        "en": "patient_age"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Stores the age of the patient involved."
+      },
+      "domain": "49",
+      "range": "148",
+      "pos": [
+        833.77,
+        145.09
+      ]
+    },
+    {
+      "id": "149",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "110",
+      "range": "57",
+      "pos": [
+        382.8,
+        719.03
+      ]
+    },
+    {
+      "id": "150",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "123",
+      "range": "66",
+      "pos": [
+        636.7,
+        823.26
+      ]
+    },
+    {
+      "id": "151",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#locatedInCountry",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "locatedInCountry",
+        "en": "locatedInCountry"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "en": "Shows the country where a manufacturer is based."
+      },
+      "domain": "14",
+      "range": "33",
+      "pos": [
+        1321.39,
+        364.74
+      ]
+    },
+    {
+      "id": "152",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "112",
+      "range": "54",
+      "pos": [
+        1261.14,
+        670.64
+      ]
+    },
+    {
+      "id": "156",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "109",
+      "range": "57",
+      "pos": [
+        509,
+        837.41
+      ]
+    },
+    {
+      "id": "157",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#detection_date",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "detection_date",
+        "en": "detection_date"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Stores the date on which the issue was detected."
+      },
+      "domain": "49",
+      "range": "143",
+      "pos": [
+        1009.6,
+        39.18
+      ]
+    },
+    {
+      "id": "158",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "108",
+      "range": "57",
+      "pos": [
+        553.32,
+        856.83
+      ]
+    },
+    {
+      "id": "159",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "107",
+      "range": "57",
+      "pos": [
+        438.55,
+        789.87
+      ]
+    },
+    {
+      "id": "160",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#eudamed_fsca_ref",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "eudamed_fsca_ref",
+        "en": "eudamed_fsca_ref"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Stores the EUDAMED reference linked to the corrective action."
+      },
+      "domain": "4",
+      "range": "135",
+      "pos": [
+        937.38,
+        773.67
+      ]
+    },
+    {
+      "id": "161",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "12",
+      "range": "9",
+      "pos": [
+        -6.25,
+        307.86
+      ]
+    },
+    {
+      "id": "162",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "55",
+      "range": "9",
+      "pos": [
+        7.29,
+        140.75
+      ]
+    },
+    {
+      "id": "163",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "106",
+      "range": "57",
+      "pos": [
+        471.92,
+        816.69
+      ]
+    },
+    {
+      "id": "164",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "105",
+      "range": "57",
+      "pos": [
+        409.56,
+        758.21
+      ]
+    },
+    {
+      "id": "165",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#reportingEntity",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "reportingEntity",
+        "en": "reportingEntity"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "en": "Indicates which organisation reported the incident."
+      },
+      "domain": "49",
+      "range": "14",
+      "pos": [
+        1158.98,
+        216.28
+      ]
+    },
+    {
+      "id": "166",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "45",
+      "range": "9",
+      "pos": [
+        22,
+        385.08
+      ]
+    },
+    {
+      "id": "167",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "8",
+      "range": "9",
+      "pos": [
+        54.91,
+        59.47
+      ]
+    },
+    {
+      "id": "168",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "73",
+      "range": "9",
+      "pos": [
+        -11.82,
+        265.84
+      ]
+    },
+    {
+      "id": "169",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "104",
+      "range": "9",
+      "pos": [
+        4.62,
+        346.01
+      ]
+    },
+    {
+      "id": "170",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#corrective_action_taken",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "corrective_action_taken",
+        "en": "corrective_action_taken"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Indicates whether a corrective action was taken after the incident."
+      },
+      "domain": "49",
+      "range": "114",
+      "pos": [
+        1148.27,
+        195.18
+      ]
+    },
+    {
+      "id": "171",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "25",
+      "range": "9",
+      "pos": [
+        26.81,
+        99.88
+      ]
+    },
+    {
+      "id": "172",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "102",
+      "range": "9",
+      "pos": [
+        -11.43,
+        222.89
+      ]
+    },
+    {
+      "id": "173",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasProbability",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "hasProbability",
+        "en": "hasProbability"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "en": "Indicates how likely the risk is to occur."
+      },
+      "domain": "22",
+      "range": "59",
+      "pos": [
+        616.58,
+        93.17
+      ]
+    },
+    {
+      "id": "174",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasActionType",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "hasActionType",
+        "en": "hasActionType"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "en": "Specifies the kind of corrective action that was taken."
+      },
+      "domain": "4",
+      "range": "72",
+      "pos": [
+        939.64,
+        669.23
+      ]
+    },
+    {
+      "id": "175",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "103",
+      "range": "9",
+      "pos": [
+        -4.91,
+        180.14
+      ]
+    },
+    {
+      "id": "176",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "42",
+      "range": "9",
+      "pos": [
+        46.66,
+        423.67
+      ]
+    },
+    {
+      "id": "177",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "84",
+      "range": "81",
+      "pos": [
+        332.75,
+        414.44
+      ]
+    },
+    {
+      "id": "178",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "83",
+      "range": "81",
+      "pos": [
+        443.51,
+        527.71
+      ]
+    },
+    {
+      "id": "179",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "89",
+      "range": "32",
+      "pos": [
+        1198.08,
+        -306.88
+      ]
+    },
+    {
+      "id": "180",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "88",
+      "range": "32",
+      "pos": [
+        1133.99,
+        -352.39
+      ]
+    },
+    {
+      "id": "181",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "71",
+      "range": "72",
+      "pos": [
+        1151.84,
+        1059.97
+      ]
+    },
+    {
+      "id": "182",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "82",
+      "range": "81",
+      "pos": [
+        373.44,
+        486.04
+      ]
+    },
+    {
+      "id": "183",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "95",
+      "range": "72",
+      "pos": [
+        974.52,
+        1107.2
+      ]
+    },
+    {
+      "id": "184",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "39",
+      "range": "89"
+    },
+    {
+      "id": "185",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "88",
+      "range": "89"
+    },
+    {
+      "id": "186",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "31",
+      "range": "35"
+    },
+    {
+      "id": "187",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "39",
+      "range": "31"
+    },
+    {
+      "id": "188",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "88",
+      "range": "31"
+    },
+    {
+      "id": "189",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "39",
+      "range": "35"
+    },
+    {
+      "id": "190",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "88",
+      "range": "35"
+    },
+    {
+      "id": "191",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "88",
+      "range": "39"
+    },
+    {
+      "id": "192",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#closure_date",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "closure_date",
+        "en": "closure_date"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Stores the date on which the corrective action was closed."
+      },
+      "domain": "4",
+      "range": "133",
+      "pos": [
+        773.67,
+        766.43
+      ]
+    },
+    {
+      "id": "193",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "31",
+      "range": "89"
+    },
+    {
+      "id": "194",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#is_ivd",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "is_ivd",
+        "en": "is_ivd"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Indicates whether the device is an in vitro diagnostic device."
+      },
+      "domain": "1",
+      "range": "136",
+      "pos": [
+        1343.13,
+        -193.17
+      ]
+    },
+    {
+      "id": "195",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "89",
+      "range": "35"
+    },
+    {
+      "id": "196",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "126",
+      "range": "61",
+      "pos": [
+        1579.46,
+        -146.56
+      ]
+    },
+    {
+      "id": "197",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "60",
+      "range": "61",
+      "pos": [
+        1600.52,
+        -15.5
+      ]
+    },
+    {
+      "id": "198",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "111",
+      "range": "72",
+      "pos": [
+        1037.6,
+        1103.31
+      ]
+    },
+    {
+      "id": "199",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "138",
+      "range": "72",
+      "pos": [
+        1094.88,
+        1088.27
+      ]
+    },
+    {
+      "id": "200",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "137",
+      "range": "44",
+      "pos": [
+        589.96,
+        -360.2
+      ]
+    },
+    {
+      "id": "201",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "154",
+      "range": "44",
+      "pos": [
+        523.92,
+        -292.88
+      ]
+    },
+    {
+      "id": "202",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "155",
+      "range": "44",
+      "pos": [
+        710.56,
+        -411.41
+      ]
+    },
+    {
+      "id": "203",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "47",
+      "range": "44",
+      "pos": [
+        666.91,
+        -400.01
+      ]
+    },
+    {
+      "id": "204",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "97",
+      "range": "44",
+      "pos": [
+        627.77,
+        -383.44
+      ]
+    },
+    {
+      "id": "205",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasIncident",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "hasIncident",
+        "en": "hasIncident"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "en": "Links a device to an incident that has been reported for it."
+      },
+      "domain": "1",
+      "range": "49",
+      "pos": [
+        1074.43,
+        97.01
+      ]
+    },
+    {
+      "id": "206",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "153",
+      "range": "44",
+      "pos": [
+        760.35,
+        -417.59
+      ]
+    },
+    {
+      "id": "207",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#eudamed_srn",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "eudamed_srn",
+        "en": "eudamed_srn"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "comment": {
+        "en": "Stores the SRN assigned to the manufacturer in EUDAMED."
+      },
+      "domain": "14",
+      "range": "115",
+      "pos": [
+        1572.13,
+        247.86
+      ]
+    },
+    {
+      "id": "208",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "hasRisk",
+        "en": "hasRisk"
+      },
+      "comment": {
+        "en": "Relates an incident to the risk identified in that case."
+      },
+      "domain": "49",
+      "range": "22",
+      "pos": [
+        838.63,
+        10.42
+      ]
+    },
+    {
+      "id": "209",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "43",
+      "range": "44",
+      "pos": [
+        556.08,
+        -330.45
+      ]
+    },
+    {
+      "id": "210",
+      "iri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasCorrectiveAction",
+      "baseIri": "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+      "label": {
+        "IRI-based": "hasCorrectiveAction",
+        "en": "hasCorrectiveAction"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "en": "Connects an incident with the safety action taken in response."
+      },
+      "domain": "49",
+      "range": "4",
+      "pos": [
+        930.97,
+        375.45
+      ]
+    },
+    {
+      "id": "211",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "80",
+      "range": "59",
+      "pos": [
+        414.74,
+        -74.46
+      ]
+    },
+    {
+      "id": "212",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "124",
+      "range": "66",
+      "pos": [
+        739.35,
+        870.84
+      ]
+    },
+    {
+      "id": "213",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "58",
+      "range": "59",
+      "pos": [
+        379.26,
+        18.12
+      ]
+    },
+    {
+      "id": "214",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "130",
+      "range": "59",
+      "pos": [
+        524.11,
+        -128.68
+      ]
+    }
+  ]
+}

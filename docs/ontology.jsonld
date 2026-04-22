@@ -1,0 +1,2978 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid100",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Infers that a risk belongs to the device failure category when its risk type is malfunction risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Rule3"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid106"
+    }, {
+      "@id" : "_:genid104"
+    }, {
+      "@id" : "_:genid102"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid108"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid102",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#MalfunctionRisk"
+  } ]
+}, {
+  "@id" : "_:genid104",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRiskType"
+  } ]
+}, {
+  "@id" : "_:genid106",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"
+  } ]
+}, {
+  "@id" : "_:genid108",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DeviceFailure"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "_:genid34"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#corrective_action_taken"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "http://www.w3.org/2003/11/swrl#varName" : [ {
+    "@value" : "i"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "_:genid36"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "_:genid37"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasStatus"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "http://www.w3.org/2003/11/swrl#varName" : [ {
+    "@value" : "a"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "http://www.w3.org/2003/11/swrl#varName" : [ {
+    "@value" : "s"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "_:genid39"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "http://www.w3.org/2003/11/swrl#varName" : [ {
+    "@value" : "s"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "_:genid41"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "_:genid42"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasIncidentType"
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "http://www.w3.org/2003/11/swrl#varName" : [ {
+    "@value" : "i"
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "http://www.w3.org/2003/11/swrl#varName" : [ {
+    "@value" : "t"
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "_:genid44"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "_:genid45"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasIncident"
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "http://www.w3.org/2003/11/swrl#varName" : [ {
+    "@value" : "d"
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "http://www.w3.org/2003/11/swrl#varName" : [ {
+    "@value" : "i"
+  } ]
+}, {
+  "@id" : "_:genid46",
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "_:genid47"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device"
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "http://www.w3.org/2003/11/swrl#varName" : [ {
+    "@value" : "d"
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "_:genid49"
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "http://www.w3.org/2003/11/swrl#varName" : [ {
+    "@value" : "d"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"
+  } ]
+}, {
+  "@id" : "_:genid50",
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "_:genid51"
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "http://www.w3.org/2003/11/swrl#varName" : [ {
+    "@value" : "i"
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "_:genid53"
+  } ]
+}, {
+  "@id" : "_:genid53",
+  "http://www.w3.org/2003/11/swrl#varName" : [ {
+    "@value" : "a"
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "_:genid55"
+  } ]
+}, {
+  "@id" : "_:genid55",
+  "http://www.w3.org/2003/11/swrl#varName" : [ {
+    "@value" : "t"
+  } ]
+}, {
+  "@id" : "_:genid56",
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "_:genid57"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"
+  } ]
+}, {
+  "@id" : "_:genid57",
+  "http://www.w3.org/2003/11/swrl#varName" : [ {
+    "@value" : "i"
+  } ]
+}, {
+  "@id" : "_:genid58",
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "_:genid59"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CorrectiveAction"
+  } ]
+}, {
+  "@id" : "_:genid59",
+  "http://www.w3.org/2003/11/swrl#varName" : [ {
+    "@value" : "a"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"
+  } ]
+}, {
+  "@id" : "_:genid66",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ClassC"
+    }, {
+      "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ClassD"
+    }, {
+      "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ClassIII"
+    }, {
+      "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ClassIIa"
+    }, {
+      "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ClassIIb"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid72",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Critical"
+    }, {
+      "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Moderate"
+    }, {
+      "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Serious"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid76",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#High"
+    }, {
+      "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Low"
+    }, {
+      "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Medium"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid80",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Infers that a device is an in vitro diagnostic device when it is regulated under the IVDR framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Rule1"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid86"
+    }, {
+      "@id" : "_:genid84"
+    }, {
+      "@id" : "_:genid82"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid88"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid82",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#rf"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#IVDR"
+  } ]
+}, {
+  "@id" : "_:genid84",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#d"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#rf"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRegulatoryFramework"
+  } ]
+}, {
+  "@id" : "_:genid86",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#d"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device"
+  } ]
+}, {
+  "@id" : "_:genid88",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#d"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#InVitroDiagnosticDevice"
+  } ]
+}, {
+  "@id" : "_:genid89",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Infers that corrective action has been taken for an incident when the linked corrective action has closed status"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Rule2"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid97"
+    }, {
+      "@id" : "_:genid95"
+    }, {
+      "@id" : "_:genid93"
+    }, {
+      "@id" : "_:genid91"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid99"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"
+  } ]
+}, {
+  "@id" : "_:genid91",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Closed"
+  } ]
+}, {
+  "@id" : "_:genid93",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#a"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasStatus"
+  } ]
+}, {
+  "@id" : "_:genid95",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#a"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasCorrectiveAction"
+  } ]
+}, {
+  "@id" : "_:genid97",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"
+  } ]
+}, {
+  "@id" : "_:genid99",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#corrective_action_taken"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/France",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Country"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#France"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "France"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Ireland",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Country"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Ireland"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Ireland"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Medtronic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#authorization_number" : [ {
+    "@value" : "IE/2017/001234"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#contact_email" : [ {
+    "@value" : "regulatory@medtronic.com"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#eudamed_srn" : [ {
+    "@value" : "SRN-IE-MF-000001"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#locatedInCountry" : [ {
+    "@id" : "http://dbpedia.org/resource/Ireland"
+  }, {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Ireland"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#manufacturer_id" : [ {
+    "@value" : "MAN_001"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#name" : [ {
+    "@value" : "Medtronic plc"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#MAN_001"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@language" : "en",
+    "@value" : "Regie Marasigan"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "The ontology of medical devices regulated under the European MDR/IVDR framework is designed to structure and represent information about medical devices, especially high-risk devices and in vitro diagnostic devices. This ontology models the relationship between the main elements of the domain: the devices, the manufacturers, the identified risks, the safety corrective actions, and the reported incidents. This makes it possible to keep all the information organized in one place, making it more accessible and useful for everyone."
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Ontology of Medical Devices Regulated under the European MDR/IVDR Framework"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ActionType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Category used to describe the kind of corrective action taken."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ActionType"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ActiveDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Device that depends on a source of energy to work."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ActiveDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DeviceType"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ActiveImplant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An active device intended to remain inside the body."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ActiveImplant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DeviceType"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ClassC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Regulatory class for IVDR devices"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ClassC"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskClass"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ClassD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Regulatory class for IVDR devices"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ClassD"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskClass"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ClassIII",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Regulatory class for MDR devices"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ClassIII"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskClass"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ClassIIa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Regulatory class for MDR devices"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ClassIIa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskClass"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ClassIIb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Regulatory class for MDR devices"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ClassIIb"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskClass"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Closed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Status showing that the corrective action is closed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Closed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Status"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Open"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CompetentAuthority",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Public authority responsible for supervising medical device regulation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "CompetentAuthority"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ContaminationRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Risk related to contamination of the device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ContaminationRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskType"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CorrectiveAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Safety measure taken to control a detected problem."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "CorrectiveAction"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Country used to indicate where a manufacturer is based or where an incident was reported."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Country"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Critical",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Severity level used when the consequences require inmediate attention."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Critical"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Severity"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CybersecurityRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Risk related to digital security problems affecting the device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "CybersecurityRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskType"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DEV_002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#device_id" : [ {
+    "@value" : "DEV_002"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#device_name" : [ {
+    "@value" : "Micra AV Transcatheter Pacing System"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasIncident" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#INC_002"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer" : [ {
+    "@id" : "http://dbpedia.org/resource/Medtronic"
+  }, {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#MAN_001"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#intended_purpose" : [ {
+    "@value" : "Leadless cardiac pacemaker for atrioventricular synchrony"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#is_active" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#is_implantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#is_ivd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#is_reusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#udi_di" : [ {
+    "@value" : "(01)00380740009112"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device"
+  }, {
+    "@id" : "_:genid31"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Sample device individual created from the CSV data."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "DEV-002"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Medical device registered with its main technical and regulatory details."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid29"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DeviceFailure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A risk related to the device not working as expected."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "DeviceFailure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskCategory"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DevicePerformance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Risk related to reduced or incorrect device performance."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "DevicePerformance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskCategory"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DeviceSafety",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Risk directly linked to the safe use of the device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "DeviceSafety"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskCategory"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DeviceType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "General category used to group devices according to their intended use."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "DeviceType"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DiagnosticError",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Risk related to wrong or misleading diagnostic results."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "DiagnosticError"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskCategory"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DiagnosticRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Risk linked to incorrect  diagnostic use."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "DiagnosticRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskType"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#FSCA_002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#action_date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-02-28"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#closure_date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-05-31"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#countries_affected" : [ {
+    "@value" : "EU-wide + UK"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#description" : [ {
+    "@value" : "Voluntary recall of affected Micra AV lots due to premature battery depletion."
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#devices_affected" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1240"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#eudamed_fsca_ref" : [ {
+    "@value" : "EU-FSCA-2024-000002"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#fsca_id" : [ {
+    "@value" : "FSCA_002"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#scope" : [ {
+    "@value" : "Micra AV lots manufactured between 2022-09 and 2023-03"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Sample corrective action individual created from the CSV data."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "FSCA-002"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#France",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Country individual used in the example data."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "France"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "France"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#HPRA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CompetentAuthority"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Sample competent authority individual created from the CSV data."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "HPRA"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Health Products Regulatory Authority"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#High",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Probability level used when the risk is high to happen."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "High"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Probability"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#INC_002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#countryReported" : [ {
+    "@id" : "http://dbpedia.org/resource/France"
+  }, {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#France"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#description" : [ {
+    "@value" : "Micra AV pacemaker reached elective replacement indicator earlier than expected."
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#detection_date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-02-14"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#eudamed_incident_ref" : [ {
+    "@value" : "EU-INC-2024-000002"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#event_date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-01-20"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasCorrectiveAction" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#FSCA_002"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RSK_009"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#incident_id" : [ {
+    "@value" : "INC_002"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#outcome" : [ {
+    "@value" : "Device malfunction - premature battery depletion"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#patient_age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "72"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#patient_sex" : [ {
+    "@value" : "Female"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#report_date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-02-03"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#reportingEntity" : [ {
+    "@id" : "http://dbpedia.org/resource/Medtronic"
+  }, {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#MAN_001"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"
+  }, {
+    "@id" : "_:genid32"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Sample incident individual created from the CSV data."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "INC-002"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#IVDR",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "European regulation used for in vitro diagnostic medical devices."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "IVDR"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RegulatoryFramework"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#MDR"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ImplantableActiveDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Active device designed to be implanted in the body."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ImplantableActiveDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DeviceType"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ImplantableDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Device intended to be introduced into the body and remain there."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ImplantableDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DeviceType"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#InSituCorrection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Corrective action type applied directly where the device is being used."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "InSituCorrection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ActionType"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#InVitroDiagnosticDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Device used to analyse samples outside the human body."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "InVitroDiagnosticDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DeviceType"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Reported event related to a medical device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid30"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#IncidentType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Category used to describe the kind of incident."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "IncidentType"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#InfectionRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Risk of  spreading infection."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "InfectionRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskType"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#InjuryRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Risk of physical harm caused by the device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "InjuryRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskType"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#InterferenceRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Risk caused by interference with other devices"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "InterferenceRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskType"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Ireland",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Country individual used in the example data."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ireland"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Ireland"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Low",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A probability level used when the risk is unlikely to happen."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Low"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Probability"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#MAN_001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#authorization_number" : [ {
+    "@value" : "IE/2017/001234"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#contact_email" : [ {
+    "@value" : "regulatory@medtronic.com"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#eudamed_srn" : [ {
+    "@value" : "SRN-IE-MF-000001"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#locatedInCountry" : [ {
+    "@id" : "http://dbpedia.org/resource/Ireland"
+  }, {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Ireland"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#manufacturer_id" : [ {
+    "@value" : "MAN_001"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#name" : [ {
+    "@value" : "Medtronic plc"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Sample manufacturer individual created from the CSV data."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "MAN-001"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#MDR",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The European regulation used for medical devices."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "MDR"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RegulatoryFramework"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#MalfunctionRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A risk related to the device not functioning properly."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "MalfunctionRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskType"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Company that makes a medical device on the market."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Manufacturer"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#MaterialRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Risk caused by the materials used in the device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "MaterialRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskType"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Medium",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Probability level used when the risk has a moderate chance of happening."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Medium"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Probability"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Moderate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Severity level used when the consequences are noticeable but limited."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Moderate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Severity"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#NearMissIncident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Incident that could have caused harm but did not."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "NearMissIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#IncidentType"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#SeriousIncident"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Open",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Status showing that the corrective action is still ongoing."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Open"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Status"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#PatientHarm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Risk involving harm to the patient."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "PatientHarm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskCategory"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Probability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Level used to express how likely a risk is to happen."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Probability"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ProductQuality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Risk linked to quality issues in the product."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ProductQuality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskCategory"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RSK_009",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#description" : [ {
+    "@value" : "Premature battery depletion causing reduced expected lifetime."
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#imdrf_code" : [ {
+    "@value" : "A070908"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#risk_id" : [ {
+    "@value" : "RSK_009"
+  } ],
+  "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#risk_name" : [ {
+    "@value" : "Battery depletion - premature"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Sample risk individual created from the CSV data."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "RSK-009"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RadiationRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Risk linked to radiation exposure from the device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "RadiationRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskType"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Recall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A corrective action type that removes affected devices from use."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Recall"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ActionType"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RegulatoryFramework",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Legal framework under which a device is regulated."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "RegulatoryFramework"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Problem associated with a device, an incident, or its use."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Risk"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Used to organise risks into common themes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "RiskCategory"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Regulatory class used to indicate the level of risk of a device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "RiskClass"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Specific kind of risk involved in a device or incident."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "RiskType"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#SafetyAlert",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Corrective action type that warns about an urgent safety issue."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SafetyAlert"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ActionType"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#SelfTestDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Diagnostic device intended to be used directly by the user."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SelfTestDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DeviceType"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Serious",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Severity level used when the consequences are important and require attention."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Serious"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Severity"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#SeriousIncident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An incident with significant impact that requires special attention."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#IncidentType"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Severity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Level used to express how serious the consequences of a risk may be."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Severity"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#SingleUseDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Device intended to be used only once."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SingleUseDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DeviceType"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#SoftwareRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Risk caused by software faults"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SoftwareRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskType"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Value used to show the current state of a corrective action."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Status"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#UserNotice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Corrective action type based on informing users about a safety issue."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "UserNotice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ActionType"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#a",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#action_date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stores the date on which the corrective action was launched."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "action_date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#affectedDeviceType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates which type of device is affected by the risk."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "affectedDeviceType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DeviceType"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#authorization_number",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stores the regulatory authorisation number linked to the manufacturer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "authorization_number"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#closure_date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stores the date on which the corrective action was closed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "closure_date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#contact_email",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stores the email address used to contact the manufacturer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "contact_email"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#corrective_action_taken",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates whether a corrective action was taken after the incident."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"
+  }, {
+    "@id" : "_:genid12"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "corrective_action_taken"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#countries_affected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stores the countries affected by the corrective action."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "countries_affected"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#countryReported",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Shows the country where the incident was reported."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"
+  }, {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "countryReported"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Country"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#d",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stores a short explanation of the element being described."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#detection_date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stores the date on which the issue was detected."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"
+  }, {
+    "@id" : "_:genid13"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "detection_date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#device_id",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stores the identifier used to recognise a device in the dataset."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device"
+  }, {
+    "@id" : "_:genid14"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "device_id"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#device_name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stores the name of the device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device"
+  }, {
+    "@id" : "_:genid15"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "device_name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#devices_affected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stores the number of devices affected."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "devices_affected"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#eudamed_fsca_ref",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stores the EUDAMED reference linked to the corrective action."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "eudamed_fsca_ref"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#eudamed_incident_ref",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stores the reference code assigned to the incident in EUDAMED."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"
+  }, {
+    "@id" : "_:genid16"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "eudamed_incident_ref"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#eudamed_srn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stores the SRN assigned to the manufacturer in EUDAMED."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "eudamed_srn"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#event_date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stores the date of the incident."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"
+  }, {
+    "@id" : "_:genid17"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "event_date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#fsca_id",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stores the identifier used to recognise a corrective action."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "fsca_id"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasActionType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Specifies the kind of corrective action that was taken."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasActionType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ActionType"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasCompetentAuthority",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links a manufacturer to the authority responsible for its regulatory oversight."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasCompetentAuthority"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CompetentAuthority"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasCorrectiveAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects an incident with the safety action taken in response."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"
+  }, {
+    "@id" : "_:genid2"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasCorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CorrectiveAction"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasDeviceType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Assigns a device to its device type category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device"
+  }, {
+    "@id" : "_:genid3"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasDeviceType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DeviceType"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasIncident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links a device to an incident that has been reported for it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device"
+  }, {
+    "@id" : "_:genid4"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"
+  }, {
+    "@id" : "_:genid5"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasIncidentType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Assigns an incident to its incident type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"
+  }, {
+    "@id" : "_:genid6"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasIncidentType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#IncidentType"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects a device with the company that manufactures it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device"
+  }, {
+    "@id" : "_:genid7"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasManufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasProbability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates how likely the risk is to occur."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasProbability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Probability"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRegulatoryFramework",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "States which regulatory framework applies to the device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device"
+  }, {
+    "@id" : "_:genid8"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasRegulatoryFramework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RegulatoryFramework"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates an incident to the risk identified in that case."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"
+  }, {
+    "@id" : "_:genid9"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRiskCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Places a risk under a broader risk category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasRiskCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskCategory"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRiskClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a device with its regulatory risk class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device"
+  }, {
+    "@id" : "_:genid10"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasRiskClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskClass"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRiskType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Specifies the kind of risk involved."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasRiskType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskType"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasSeverity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Shows how serious the risk may be."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasSeverity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Severity"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Shows the current status of a corrective action."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasStatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Status"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#i",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#imdrf_code",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stores the IMDRF code used to classify the risk."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "imdrf_code"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#incident_id",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stores the identifier used to recognise an incident."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"
+  }, {
+    "@id" : "_:genid18"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "incident_id"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#intended_purpose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stores the main purpose for which the device is intended."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device"
+  }, {
+    "@id" : "_:genid19"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "intended_purpose"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#is_active",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates whether the device depends on a source of energy to work."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device"
+  }, {
+    "@id" : "_:genid20"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is_active"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#is_implantable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates whether the device is meant to be implanted in the body."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device"
+  }, {
+    "@id" : "_:genid21"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is_implantable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#is_ivd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates whether the device is an in vitro diagnostic device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device"
+  }, {
+    "@id" : "_:genid22"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is_ivd"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#is_reusable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates whether the device is intended to be reused."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device"
+  }, {
+    "@id" : "_:genid23"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is_reusable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#locatedInCountry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Shows the country where a manufacturer is based."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "locatedInCountry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Country"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#manufacturer_id",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stores the identifier used to recognise a manufacturer in the dataset."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "manufacturer_id"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stores the official name of the manufacturer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#outcome",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stores the result or consequence of the incident."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"
+  }, {
+    "@id" : "_:genid24"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "outcome"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#patient_age",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stores the age of the patient involved."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"
+  }, {
+    "@id" : "_:genid25"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "patient_age"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#patient_sex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stores the sex of the patient involved."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"
+  }, {
+    "@id" : "_:genid26"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "patient_sex"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#r",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#report_date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stores the reported date of the incident."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"
+  }, {
+    "@id" : "_:genid27"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "report_date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#reportingEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates which organisation reported the incident."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"
+  }, {
+    "@id" : "_:genid11"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "reportingEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#rf",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#risk_id",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stores the identifier of the risk."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "risk_id"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#risk_name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stores the name to identify the risk."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "risk_name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#rule1",
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@id" : "_:genid60"
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@id" : "_:genid61"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#rule2",
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@id" : "_:genid62"
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@id" : "_:genid63"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#rule3",
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@id" : "_:genid64"
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@id" : "_:genid65"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#s",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#scope",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stores a short description of the scope of the corrective action."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "scope"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#t",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#udi_di",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stores the device identifier used in the UDI system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device"
+  }, {
+    "@id" : "_:genid28"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "udi_di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrl#argument1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrl#argument2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrl#body",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrl#classPredicate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrl#head",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrl#propertyPredicate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrl#varName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stores the preferred label used for a country."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "pref_label"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stores the official name of the authority."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CompetentAuthority"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+} ]

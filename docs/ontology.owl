@@ -1,0 +1,2290 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#"
+     xml:base="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#">
+    <owl:Ontology rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu">
+        <terms:creator xml:lang="en">Regie Marasigan</terms:creator>
+        <terms:description xml:lang="en">The ontology of medical devices regulated under the European MDR/IVDR framework is designed to structure and represent information about medical devices, especially high-risk devices and in vitro diagnostic devices. This ontology models the relationship between the main elements of the domain: the devices, the manufacturers, the identified risks, the safety corrective actions, and the reported incidents. This makes it possible to keep all the information organized in one place, making it more accessible and useful for everyone.</terms:description>
+        <terms:title xml:lang="en">Ontology of Medical Devices Regulated under the European MDR/IVDR Framework</terms:title>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#argument1 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/11/swrl#argument1"/>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#argument2 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/11/swrl#argument2"/>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#body -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/11/swrl#body"/>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#classPredicate -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/11/swrl#classPredicate"/>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#head -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/11/swrl#head"/>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#propertyPredicate -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/11/swrl#propertyPredicate"/>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#varName -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/11/swrl#varName"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#affectedDeviceType -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#affectedDeviceType">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"/>
+        <rdfs:range rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DeviceType"/>
+        <rdfs:comment xml:lang="en">Indicates which type of device is affected by the risk.</rdfs:comment>
+        <rdfs:label xml:lang="en">affectedDeviceType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#countryReported -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#countryReported">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Country"/>
+        <rdfs:comment xml:lang="en">Shows the country where the incident was reported.</rdfs:comment>
+        <rdfs:label xml:lang="en">countryReported</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasActionType -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasActionType">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CorrectiveAction"/>
+        <rdfs:range rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ActionType"/>
+        <rdfs:comment xml:lang="en">Specifies the kind of corrective action that was taken.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasActionType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasCompetentAuthority -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasCompetentAuthority">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"/>
+        <rdfs:range rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CompetentAuthority"/>
+        <rdfs:comment xml:lang="en">Links a manufacturer to the authority responsible for its regulatory oversight.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasCompetentAuthority</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasCorrectiveAction -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasCorrectiveAction">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CorrectiveAction"/>
+        <rdfs:comment xml:lang="en">Connects an incident with the safety action taken in response.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasCorrectiveAction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasDeviceType -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasDeviceType">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DeviceType"/>
+        <rdfs:comment xml:lang="en">Assigns a device to its device type category.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasDeviceType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasIncident -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasIncident">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Links a device to an incident that has been reported for it.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasIncident</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasIncidentType -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasIncidentType">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#IncidentType"/>
+        <rdfs:comment xml:lang="en">Assigns an incident to its incident type.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasIncidentType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"/>
+        <rdfs:comment xml:lang="en">Connects a device with the company that manufactures it.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasManufacturer</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasProbability -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasProbability">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"/>
+        <rdfs:range rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Probability"/>
+        <rdfs:comment xml:lang="en">Indicates how likely the risk is to occur.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasProbability</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRegulatoryFramework -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRegulatoryFramework">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RegulatoryFramework"/>
+        <rdfs:comment xml:lang="en">States which regulatory framework applies to the device.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasRegulatoryFramework</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"/>
+        <rdfs:comment xml:lang="en">Relates an incident to the risk identified in that case.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasRisk</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRiskCategory -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRiskCategory">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"/>
+        <rdfs:range rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskCategory"/>
+        <rdfs:comment xml:lang="en">Places a risk under a broader risk category.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasRiskCategory</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRiskClass -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRiskClass">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskClass"/>
+        <rdfs:comment xml:lang="en">Associates a device with its regulatory risk class.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasRiskClass</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRiskType -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRiskType">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"/>
+        <rdfs:range rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskType"/>
+        <rdfs:comment xml:lang="en">Specifies the kind of risk involved.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasRiskType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasSeverity -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasSeverity">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"/>
+        <rdfs:range rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Severity"/>
+        <rdfs:comment xml:lang="en">Shows how serious the risk may be.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasSeverity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasStatus -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasStatus">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CorrectiveAction"/>
+        <rdfs:range rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Status"/>
+        <rdfs:comment xml:lang="en">Shows the current status of a corrective action.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasStatus</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#locatedInCountry -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#locatedInCountry">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"/>
+        <rdfs:range rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Country"/>
+        <rdfs:comment xml:lang="en">Shows the country where a manufacturer is based.</rdfs:comment>
+        <rdfs:label xml:lang="en">locatedInCountry</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#reportingEntity -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#reportingEntity">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"/>
+        <rdfs:comment xml:lang="en">Indicates which organisation reported the incident.</rdfs:comment>
+        <rdfs:label xml:lang="en">reportingEntity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#action_date -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#action_date">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CorrectiveAction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="en">Stores the date on which the corrective action was launched.</rdfs:comment>
+        <rdfs:label xml:lang="en">action_date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#authorization_number -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#authorization_number">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the regulatory authorisation number linked to the manufacturer.</rdfs:comment>
+        <rdfs:label xml:lang="en">authorization_number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#closure_date -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#closure_date">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CorrectiveAction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="en">Stores the date on which the corrective action was closed.</rdfs:comment>
+        <rdfs:label xml:lang="en">closure_date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#contact_email -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#contact_email">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the email address used to contact the manufacturer.</rdfs:comment>
+        <rdfs:label xml:lang="en">contact_email</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#corrective_action_taken -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#corrective_action_taken">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">Indicates whether a corrective action was taken after the incident.</rdfs:comment>
+        <rdfs:label xml:lang="en">corrective_action_taken</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#countries_affected -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#countries_affected">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CorrectiveAction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the countries affected by the corrective action.</rdfs:comment>
+        <rdfs:label xml:lang="en">countries_affected</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#description -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#description">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores a short explanation of the element being described.</rdfs:comment>
+        <rdfs:label xml:lang="en">description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#detection_date -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#detection_date">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="en">Stores the date on which the issue was detected.</rdfs:comment>
+        <rdfs:label xml:lang="en">detection_date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#device_id -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#device_id">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the identifier used to recognise a device in the dataset.</rdfs:comment>
+        <rdfs:label xml:lang="en">device_id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#device_name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#device_name">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the name of the device.</rdfs:comment>
+        <rdfs:label xml:lang="en">device_name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#devices_affected -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#devices_affected">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CorrectiveAction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">Stores the number of devices affected.</rdfs:comment>
+        <rdfs:label xml:lang="en">devices_affected</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#eudamed_fsca_ref -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#eudamed_fsca_ref">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CorrectiveAction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the EUDAMED reference linked to the corrective action.</rdfs:comment>
+        <rdfs:label xml:lang="en">eudamed_fsca_ref</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#eudamed_incident_ref -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#eudamed_incident_ref">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the reference code assigned to the incident in EUDAMED.</rdfs:comment>
+        <rdfs:label xml:lang="en">eudamed_incident_ref</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#eudamed_srn -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#eudamed_srn">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the SRN assigned to the manufacturer in EUDAMED.</rdfs:comment>
+        <rdfs:label xml:lang="en">eudamed_srn</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#event_date -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#event_date">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="en">Stores the date of the incident.</rdfs:comment>
+        <rdfs:label xml:lang="en">event_date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#fsca_id -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#fsca_id">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CorrectiveAction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the identifier used to recognise a corrective action.</rdfs:comment>
+        <rdfs:label xml:lang="en">fsca_id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#imdrf_code -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#imdrf_code">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the IMDRF code used to classify the risk.</rdfs:comment>
+        <rdfs:label xml:lang="en">imdrf_code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#incident_id -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#incident_id">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the identifier used to recognise an incident.</rdfs:comment>
+        <rdfs:label xml:lang="en">incident_id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#intended_purpose -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#intended_purpose">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the main purpose for which the device is intended.</rdfs:comment>
+        <rdfs:label xml:lang="en">intended_purpose</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#is_active -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#is_active">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">Indicates whether the device depends on a source of energy to work.</rdfs:comment>
+        <rdfs:label xml:lang="en">is_active</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#is_implantable -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#is_implantable">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">Indicates whether the device is meant to be implanted in the body.</rdfs:comment>
+        <rdfs:label xml:lang="en">is_implantable</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#is_ivd -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#is_ivd">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">Indicates whether the device is an in vitro diagnostic device.</rdfs:comment>
+        <rdfs:label xml:lang="en">is_ivd</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#is_reusable -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#is_reusable">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">Indicates whether the device is intended to be reused.</rdfs:comment>
+        <rdfs:label xml:lang="en">is_reusable</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#manufacturer_id -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#manufacturer_id">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the identifier used to recognise a manufacturer in the dataset.</rdfs:comment>
+        <rdfs:label xml:lang="en">manufacturer_id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#name">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the official name of the manufacturer.</rdfs:comment>
+        <rdfs:label xml:lang="en">name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#outcome -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#outcome">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the result or consequence of the incident.</rdfs:comment>
+        <rdfs:label xml:lang="en">outcome</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#patient_age -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#patient_age">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">Stores the age of the patient involved.</rdfs:comment>
+        <rdfs:label xml:lang="en">patient_age</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#patient_sex -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#patient_sex">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the sex of the patient involved.</rdfs:comment>
+        <rdfs:label xml:lang="en">patient_sex</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#report_date -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#report_date">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="en">Stores the reported date of the incident.</rdfs:comment>
+        <rdfs:label xml:lang="en">report_date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#risk_id -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#risk_id">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the identifier of the risk.</rdfs:comment>
+        <rdfs:label xml:lang="en">risk_id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#risk_name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#risk_name">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the name to identify the risk.</rdfs:comment>
+        <rdfs:label xml:lang="en">risk_name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#scope -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#scope">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CorrectiveAction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores a short description of the scope of the corrective action.</rdfs:comment>
+        <rdfs:label xml:lang="en">scope</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#udi_di -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#udi_di">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the device identifier used in the UDI system.</rdfs:comment>
+        <rdfs:label xml:lang="en">udi_di</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the preferred label used for a country.</rdfs:comment>
+        <rdfs:label xml:lang="en">pref_label</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/name">
+        <rdfs:domain rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CompetentAuthority"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the official name of the authority.</rdfs:comment>
+        <rdfs:label xml:lang="en">name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ActionType -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ActionType">
+        <rdfs:comment xml:lang="en">Category used to describe the kind of corrective action taken.</rdfs:comment>
+        <rdfs:label xml:lang="en">ActionType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ActiveDevice -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ActiveDevice">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DeviceType"/>
+        <rdfs:comment xml:lang="en">Device that depends on a source of energy to work.</rdfs:comment>
+        <rdfs:label xml:lang="en">ActiveDevice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ActiveImplant -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ActiveImplant">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DeviceType"/>
+        <rdfs:comment xml:lang="en">An active device intended to remain inside the body.</rdfs:comment>
+        <rdfs:label xml:lang="en">ActiveImplant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ClassC -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ClassC">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskClass"/>
+        <rdfs:comment xml:lang="en">Regulatory class for IVDR devices</rdfs:comment>
+        <rdfs:label xml:lang="en">ClassC</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ClassD -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ClassD">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskClass"/>
+        <rdfs:comment xml:lang="en">Regulatory class for IVDR devices</rdfs:comment>
+        <rdfs:label xml:lang="en">ClassD</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ClassIII -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ClassIII">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskClass"/>
+        <rdfs:comment xml:lang="en">Regulatory class for MDR devices</rdfs:comment>
+        <rdfs:label xml:lang="en">ClassIII</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ClassIIa -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ClassIIa">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskClass"/>
+        <rdfs:comment xml:lang="en">Regulatory class for MDR devices</rdfs:comment>
+        <rdfs:label xml:lang="en">ClassIIa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ClassIIb -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ClassIIb">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskClass"/>
+        <rdfs:comment xml:lang="en">Regulatory class for MDR devices</rdfs:comment>
+        <rdfs:label xml:lang="en">ClassIIb</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Closed -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Closed">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Status"/>
+        <owl:disjointWith rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Open"/>
+        <rdfs:comment xml:lang="en">Status showing that the corrective action is closed</rdfs:comment>
+        <rdfs:label xml:lang="en">Closed</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CompetentAuthority -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CompetentAuthority">
+        <rdfs:comment xml:lang="en">Public authority responsible for supervising medical device regulation.</rdfs:comment>
+        <rdfs:label xml:lang="en">CompetentAuthority</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ContaminationRisk -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ContaminationRisk">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskType"/>
+        <rdfs:comment xml:lang="en">Risk related to contamination of the device</rdfs:comment>
+        <rdfs:label xml:lang="en">ContaminationRisk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CorrectiveAction -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CorrectiveAction">
+        <rdfs:comment xml:lang="en">Safety measure taken to control a detected problem.</rdfs:comment>
+        <rdfs:label xml:lang="en">CorrectiveAction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Country -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Country">
+        <rdfs:comment xml:lang="en">Country used to indicate where a manufacturer is based or where an incident was reported.</rdfs:comment>
+        <rdfs:label xml:lang="en">Country</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Critical -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Critical">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Severity"/>
+        <rdfs:comment>Severity level used when the consequences require inmediate attention.</rdfs:comment>
+        <rdfs:label xml:lang="en">Critical</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CybersecurityRisk -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CybersecurityRisk">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskType"/>
+        <rdfs:comment xml:lang="en">Risk related to digital security problems affecting the device.</rdfs:comment>
+        <rdfs:label xml:lang="en">CybersecurityRisk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Medical device registered with its main technical and regulatory details.</rdfs:comment>
+        <rdfs:label xml:lang="en">Device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DeviceFailure -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DeviceFailure">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskCategory"/>
+        <rdfs:comment xml:lang="en">A risk related to the device not working as expected.</rdfs:comment>
+        <rdfs:label xml:lang="en">DeviceFailure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DevicePerformance -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DevicePerformance">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskCategory"/>
+        <rdfs:comment xml:lang="en">Risk related to reduced or incorrect device performance.</rdfs:comment>
+        <rdfs:label xml:lang="en">DevicePerformance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DeviceSafety -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DeviceSafety">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskCategory"/>
+        <rdfs:comment xml:lang="en">Risk directly linked to the safe use of the device.</rdfs:comment>
+        <rdfs:label xml:lang="en">DeviceSafety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DeviceType -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DeviceType">
+        <rdfs:comment xml:lang="en">General category used to group devices according to their intended use.</rdfs:comment>
+        <rdfs:label xml:lang="en">DeviceType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DiagnosticError -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DiagnosticError">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskCategory"/>
+        <rdfs:comment xml:lang="en">Risk related to wrong or misleading diagnostic results.</rdfs:comment>
+        <rdfs:label xml:lang="en">DiagnosticError</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DiagnosticRisk -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DiagnosticRisk">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskType"/>
+        <rdfs:comment xml:lang="en">Risk linked to incorrect  diagnostic use.</rdfs:comment>
+        <rdfs:label xml:lang="en">DiagnosticRisk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#High -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#High">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Probability"/>
+        <rdfs:comment xml:lang="en">Probability level used when the risk is high to happen.</rdfs:comment>
+        <rdfs:label xml:lang="en">High</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#IVDR -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#IVDR">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RegulatoryFramework"/>
+        <owl:disjointWith rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#MDR"/>
+        <rdfs:comment xml:lang="en">European regulation used for in vitro diagnostic medical devices.</rdfs:comment>
+        <rdfs:label xml:lang="en">IVDR</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ImplantableActiveDevice -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ImplantableActiveDevice">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DeviceType"/>
+        <rdfs:comment xml:lang="en">Active device designed to be implanted in the body.</rdfs:comment>
+        <rdfs:label xml:lang="en">ImplantableActiveDevice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ImplantableDevice -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ImplantableDevice">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DeviceType"/>
+        <rdfs:comment xml:lang="en">Device intended to be introduced into the body and remain there.</rdfs:comment>
+        <rdfs:label xml:lang="en">ImplantableDevice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#InSituCorrection -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#InSituCorrection">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ActionType"/>
+        <rdfs:comment xml:lang="en">Corrective action type applied directly where the device is being used.</rdfs:comment>
+        <rdfs:label xml:lang="en">InSituCorrection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#InVitroDiagnosticDevice -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#InVitroDiagnosticDevice">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DeviceType"/>
+        <rdfs:comment xml:lang="en">Device used to analyse samples outside the human body.</rdfs:comment>
+        <rdfs:label xml:lang="en">InVitroDiagnosticDevice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Reported event related to a medical device</rdfs:comment>
+        <rdfs:label xml:lang="en">Incident</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#IncidentType -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#IncidentType">
+        <rdfs:comment xml:lang="en">Category used to describe the kind of incident.</rdfs:comment>
+        <rdfs:label xml:lang="en">IncidentType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#InfectionRisk -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#InfectionRisk">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskType"/>
+        <rdfs:comment xml:lang="en">Risk of  spreading infection.</rdfs:comment>
+        <rdfs:label xml:lang="en">InfectionRisk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#InjuryRisk -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#InjuryRisk">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskType"/>
+        <rdfs:comment xml:lang="en">Risk of physical harm caused by the device.</rdfs:comment>
+        <rdfs:label xml:lang="en">InjuryRisk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#InterferenceRisk -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#InterferenceRisk">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskType"/>
+        <rdfs:comment xml:lang="en">Risk caused by interference with other devices</rdfs:comment>
+        <rdfs:label xml:lang="en">InterferenceRisk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Low -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Low">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Probability"/>
+        <rdfs:comment xml:lang="en">A probability level used when the risk is unlikely to happen.</rdfs:comment>
+        <rdfs:label xml:lang="en">Low</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#MDR -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#MDR">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RegulatoryFramework"/>
+        <rdfs:comment xml:lang="en">The European regulation used for medical devices.</rdfs:comment>
+        <rdfs:label xml:lang="en">MDR</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#MalfunctionRisk -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#MalfunctionRisk">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskType"/>
+        <rdfs:comment xml:lang="en">A risk related to the device not functioning properly.</rdfs:comment>
+        <rdfs:label xml:lang="en">MalfunctionRisk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer">
+        <rdfs:comment xml:lang="en">Company that makes a medical device on the market.</rdfs:comment>
+        <rdfs:label xml:lang="en">Manufacturer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#MaterialRisk -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#MaterialRisk">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskType"/>
+        <rdfs:comment xml:lang="en">Risk caused by the materials used in the device.</rdfs:comment>
+        <rdfs:label xml:lang="en">MaterialRisk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Medium -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Medium">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Probability"/>
+        <rdfs:comment xml:lang="en">Probability level used when the risk has a moderate chance of happening.</rdfs:comment>
+        <rdfs:label xml:lang="en">Medium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Moderate -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Moderate">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Severity"/>
+        <rdfs:comment xml:lang="en">Severity level used when the consequences are noticeable but limited.</rdfs:comment>
+        <rdfs:label xml:lang="en">Moderate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#NearMissIncident -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#NearMissIncident">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#IncidentType"/>
+        <owl:disjointWith rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#SeriousIncident"/>
+        <rdfs:comment xml:lang="en">Incident that could have caused harm but did not.</rdfs:comment>
+        <rdfs:label xml:lang="en">NearMissIncident</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Open -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Open">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Status"/>
+        <rdfs:comment xml:lang="en">Status showing that the corrective action is still ongoing.</rdfs:comment>
+        <rdfs:label xml:lang="en">Open</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#PatientHarm -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#PatientHarm">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskCategory"/>
+        <rdfs:comment xml:lang="en">Risk involving harm to the patient.</rdfs:comment>
+        <rdfs:label xml:lang="en">PatientHarm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Probability -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Probability">
+        <rdfs:comment xml:lang="en">Level used to express how likely a risk is to happen.</rdfs:comment>
+        <rdfs:label xml:lang="en">Probability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ProductQuality -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ProductQuality">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskCategory"/>
+        <rdfs:comment xml:lang="en">Risk linked to quality issues in the product.</rdfs:comment>
+        <rdfs:label xml:lang="en">ProductQuality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RadiationRisk -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RadiationRisk">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskType"/>
+        <rdfs:comment xml:lang="en">Risk linked to radiation exposure from the device.</rdfs:comment>
+        <rdfs:label xml:lang="en">RadiationRisk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Recall -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Recall">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ActionType"/>
+        <rdfs:comment xml:lang="en">A corrective action type that removes affected devices from use.</rdfs:comment>
+        <rdfs:label xml:lang="en">Recall</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RegulatoryFramework -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RegulatoryFramework">
+        <rdfs:comment xml:lang="en">Legal framework under which a device is regulated.</rdfs:comment>
+        <rdfs:label xml:lang="en">RegulatoryFramework</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk">
+        <rdfs:comment xml:lang="en">Problem associated with a device, an incident, or its use.</rdfs:comment>
+        <rdfs:label xml:lang="en">Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskCategory -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskCategory">
+        <rdfs:comment xml:lang="en">Used to organise risks into common themes.</rdfs:comment>
+        <rdfs:label xml:lang="en">RiskCategory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskClass -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskClass">
+        <rdfs:comment xml:lang="en">Regulatory class used to indicate the level of risk of a device.</rdfs:comment>
+        <rdfs:label xml:lang="en">RiskClass</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskType -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskType">
+        <rdfs:comment xml:lang="en">Specific kind of risk involved in a device or incident.</rdfs:comment>
+        <rdfs:label xml:lang="en">RiskType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#SafetyAlert -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#SafetyAlert">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ActionType"/>
+        <rdfs:comment xml:lang="en">Corrective action type that warns about an urgent safety issue.</rdfs:comment>
+        <rdfs:label xml:lang="en">SafetyAlert</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#SelfTestDevice -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#SelfTestDevice">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DeviceType"/>
+        <rdfs:comment xml:lang="en">Diagnostic device intended to be used directly by the user.</rdfs:comment>
+        <rdfs:label xml:lang="en">SelfTestDevice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Serious -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Serious">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Severity"/>
+        <rdfs:comment xml:lang="en">Severity level used when the consequences are important and require attention.</rdfs:comment>
+        <rdfs:label xml:lang="en">Serious</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#SeriousIncident -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#SeriousIncident">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#IncidentType"/>
+        <rdfs:comment xml:lang="en">An incident with significant impact that requires special attention.</rdfs:comment>
+        <rdfs:label xml:lang="en">SeriousIncident</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Severity -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Severity">
+        <rdfs:comment xml:lang="en">Level used to express how serious the consequences of a risk may be.</rdfs:comment>
+        <rdfs:label xml:lang="en">Severity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#SingleUseDevice -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#SingleUseDevice">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DeviceType"/>
+        <rdfs:comment xml:lang="en">Device intended to be used only once.</rdfs:comment>
+        <rdfs:label xml:lang="en">SingleUseDevice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#SoftwareRisk -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#SoftwareRisk">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RiskType"/>
+        <rdfs:comment xml:lang="en">Risk caused by software faults</rdfs:comment>
+        <rdfs:label xml:lang="en">SoftwareRisk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Status -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Status">
+        <rdfs:comment xml:lang="en">Value used to show the current state of a corrective action.</rdfs:comment>
+        <rdfs:label xml:lang="en">Status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#UserNotice -->
+
+
+    <owl:Class rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#UserNotice">
+        <rdfs:subClassOf rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ActionType"/>
+        <rdfs:comment xml:lang="en">Corrective action type based on informing users about a safety issue.</rdfs:comment>
+        <rdfs:label xml:lang="en">UserNotice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://dbpedia.org/resource/France -->
+
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/France">
+        <rdf:type rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Country"/>
+        <owl:sameAs rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#France"/>
+        <skos:prefLabel>France</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#France -->
+
+
+    <rdf:Description rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#France"/>
+    
+
+
+    <!-- http://dbpedia.org/resource/Ireland -->
+
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Ireland">
+        <rdf:type rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Country"/>
+        <owl:sameAs rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Ireland"/>
+        <skos:prefLabel>Ireland</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Ireland -->
+
+
+    <rdf:Description rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Ireland"/>
+    
+
+
+    <!-- http://dbpedia.org/resource/Medtronic -->
+
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Medtronic">
+        <rdf:type rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"/>
+        <owl:sameAs rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#MAN_001"/>
+        <locatedInCountry rdf:resource="http://dbpedia.org/resource/Ireland"/>
+        <locatedInCountry rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Ireland"/>
+        <authorization_number>IE/2017/001234</authorization_number>
+        <contact_email>regulatory@medtronic.com</contact_email>
+        <eudamed_srn>SRN-IE-MF-000001</eudamed_srn>
+        <manufacturer_id>MAN_001</manufacturer_id>
+        <name>Medtronic plc</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#MAN_001 -->
+
+
+    <rdf:Description rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#MAN_001"/>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DEV_002 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DEV_002">
+        <rdf:type rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasManufacturer"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <hasIncident rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#INC_002"/>
+        <hasManufacturer rdf:resource="http://dbpedia.org/resource/Medtronic"/>
+        <hasManufacturer rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#MAN_001"/>
+        <device_id>DEV_002</device_id>
+        <device_name>Micra AV Transcatheter Pacing System</device_name>
+        <intended_purpose>Leadless cardiac pacemaker for atrioventricular synchrony</intended_purpose>
+        <is_active rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</is_active>
+        <is_implantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</is_implantable>
+        <is_ivd rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</is_ivd>
+        <is_reusable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</is_reusable>
+        <udi_di>(01)00380740009112</udi_di>
+        <rdfs:comment xml:lang="en">Sample device individual created from the CSV data.</rdfs:comment>
+        <rdfs:label xml:lang="en">DEV-002</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#FSCA_002 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#FSCA_002">
+        <rdf:type rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CorrectiveAction"/>
+        <action_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-02-28</action_date>
+        <closure_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-31</closure_date>
+        <countries_affected>EU-wide + UK</countries_affected>
+        <description>Voluntary recall of affected Micra AV lots due to premature battery depletion.</description>
+        <devices_affected rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1240</devices_affected>
+        <eudamed_fsca_ref>EU-FSCA-2024-000002</eudamed_fsca_ref>
+        <fsca_id>FSCA_002</fsca_id>
+        <scope>Micra AV lots manufactured between 2022-09 and 2023-03</scope>
+        <rdfs:comment xml:lang="en">Sample corrective action individual created from the CSV data.</rdfs:comment>
+        <rdfs:label xml:lang="en">FSCA-002</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#France -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#France">
+        <rdf:type rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Country"/>
+        <skos:prefLabel>France</skos:prefLabel>
+        <rdfs:comment xml:lang="en">Country individual used in the example data.</rdfs:comment>
+        <rdfs:label xml:lang="en">France</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#HPRA -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#HPRA">
+        <rdf:type rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CompetentAuthority"/>
+        <foaf:name>Health Products Regulatory Authority</foaf:name>
+        <rdfs:comment xml:lang="en">Sample competent authority individual created from the CSV data.</rdfs:comment>
+        <rdfs:label xml:lang="en">HPRA</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#INC_002 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#INC_002">
+        <rdf:type rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRisk"/>
+                <owl:someValuesFrom rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"/>
+            </owl:Restriction>
+        </rdf:type>
+        <countryReported rdf:resource="http://dbpedia.org/resource/France"/>
+        <countryReported rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#France"/>
+        <hasCorrectiveAction rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#FSCA_002"/>
+        <hasRisk rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RSK_009"/>
+        <reportingEntity rdf:resource="http://dbpedia.org/resource/Medtronic"/>
+        <reportingEntity rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#MAN_001"/>
+        <description>Micra AV pacemaker reached elective replacement indicator earlier than expected.</description>
+        <detection_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-02-14</detection_date>
+        <eudamed_incident_ref>EU-INC-2024-000002</eudamed_incident_ref>
+        <event_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-20</event_date>
+        <incident_id>INC_002</incident_id>
+        <outcome>Device malfunction - premature battery depletion</outcome>
+        <patient_age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">72</patient_age>
+        <patient_sex>Female</patient_sex>
+        <report_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-02-03</report_date>
+        <rdfs:comment xml:lang="en">Sample incident individual created from the CSV data.</rdfs:comment>
+        <rdfs:label xml:lang="en">INC-002</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Ireland -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Ireland">
+        <rdf:type rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Country"/>
+        <skos:prefLabel>Ireland</skos:prefLabel>
+        <rdfs:comment xml:lang="en">Country individual used in the example data.</rdfs:comment>
+        <rdfs:label xml:lang="en">Ireland</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#MAN_001 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#MAN_001">
+        <rdf:type rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Manufacturer"/>
+        <locatedInCountry rdf:resource="http://dbpedia.org/resource/Ireland"/>
+        <locatedInCountry rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Ireland"/>
+        <authorization_number>IE/2017/001234</authorization_number>
+        <contact_email>regulatory@medtronic.com</contact_email>
+        <eudamed_srn>SRN-IE-MF-000001</eudamed_srn>
+        <manufacturer_id>MAN_001</manufacturer_id>
+        <name>Medtronic plc</name>
+        <rdfs:comment xml:lang="en">Sample manufacturer individual created from the CSV data.</rdfs:comment>
+        <rdfs:label xml:lang="en">MAN-001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RSK_009 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#RSK_009">
+        <rdf:type rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"/>
+        <description>Premature battery depletion causing reduced expected lifetime.</description>
+        <imdrf_code>A070908</imdrf_code>
+        <risk_id>RSK_009</risk_id>
+        <risk_name>Battery depletion - premature</risk_name>
+        <rdfs:comment xml:lang="en">Sample risk individual created from the CSV data.</rdfs:comment>
+        <rdfs:label xml:lang="en">RSK-009</rdfs:label>
+    </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid33">
+        <swrl:argument1>
+            <rdf:Description>
+                <swrl:varName>i</swrl:varName>
+            </rdf:Description>
+        </swrl:argument1>
+        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+        <swrl:propertyPredicate rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#corrective_action_taken"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid35">
+        <swrl:argument1>
+            <rdf:Description>
+                <swrl:varName>a</swrl:varName>
+            </rdf:Description>
+        </swrl:argument1>
+        <swrl:argument2>
+            <rdf:Description>
+                <swrl:varName>s</swrl:varName>
+            </rdf:Description>
+        </swrl:argument2>
+        <swrl:propertyPredicate rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasStatus"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrl:argument1>
+            <rdf:Description>
+                <swrl:varName>s</swrl:varName>
+            </rdf:Description>
+        </swrl:argument1>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid40">
+        <swrl:argument1>
+            <rdf:Description>
+                <swrl:varName>i</swrl:varName>
+            </rdf:Description>
+        </swrl:argument1>
+        <swrl:argument2>
+            <rdf:Description>
+                <swrl:varName>t</swrl:varName>
+            </rdf:Description>
+        </swrl:argument2>
+        <swrl:propertyPredicate rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasIncidentType"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid43">
+        <swrl:argument1>
+            <rdf:Description>
+                <swrl:varName>d</swrl:varName>
+            </rdf:Description>
+        </swrl:argument1>
+        <swrl:argument2>
+            <rdf:Description>
+                <swrl:varName>i</swrl:varName>
+            </rdf:Description>
+        </swrl:argument2>
+        <swrl:propertyPredicate rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasIncident"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid46">
+        <swrl:argument1>
+            <rdf:Description>
+                <swrl:varName>d</swrl:varName>
+            </rdf:Description>
+        </swrl:argument1>
+        <swrl:classPredicate rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrl:argument1>
+            <rdf:Description>
+                <swrl:varName>d</swrl:varName>
+            </rdf:Description>
+        </swrl:argument1>
+    </rdf:Description>
+    <rdf:Description>
+        <swrl:argument1>
+            <rdf:Description>
+                <swrl:varName>i</swrl:varName>
+            </rdf:Description>
+        </swrl:argument1>
+    </rdf:Description>
+    <rdf:Description>
+        <swrl:argument1>
+            <rdf:Description>
+                <swrl:varName>a</swrl:varName>
+            </rdf:Description>
+        </swrl:argument1>
+    </rdf:Description>
+    <rdf:Description>
+        <swrl:argument1>
+            <rdf:Description>
+                <swrl:varName>t</swrl:varName>
+            </rdf:Description>
+        </swrl:argument1>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid56">
+        <swrl:argument1>
+            <rdf:Description>
+                <swrl:varName>i</swrl:varName>
+            </rdf:Description>
+        </swrl:argument1>
+        <swrl:classPredicate rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid58">
+        <swrl:argument1>
+            <rdf:Description>
+                <swrl:varName>a</swrl:varName>
+            </rdf:Description>
+        </swrl:argument1>
+        <swrl:classPredicate rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#CorrectiveAction"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#rule1">
+        <swrl:body>
+            <rdf:Description/>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description/>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#rule2">
+        <swrl:body>
+            <rdf:Description/>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description/>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#rule3">
+        <swrl:body>
+            <rdf:Description/>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description/>
+        </swrl:head>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ClassC"/>
+            <rdf:Description rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ClassD"/>
+            <rdf:Description rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ClassIII"/>
+            <rdf:Description rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ClassIIa"/>
+            <rdf:Description rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#ClassIIb"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Critical"/>
+            <rdf:Description rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Moderate"/>
+            <rdf:Description rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Serious"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#High"/>
+            <rdf:Description rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Low"/>
+            <rdf:Description rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Medium"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#d">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#rf">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#i">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Infers that a risk belongs to the device failure category when its risk type is malfunction risk</rdfs:comment>
+        <rdfs:label>Rule3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Risk"/>
+                        <swrl:argument1 rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRiskType"/>
+                                <swrl:argument1 rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#r"/>
+                                <swrl:argument2 rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#t"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#MalfunctionRisk"/>
+                                        <swrl:argument1 rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#DeviceFailure"/>
+                        <swrl:argument1 rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Infers that a device is an in vitro diagnostic device when it is regulated under the IVDR framework</rdfs:comment>
+        <rdfs:label>Rule1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Device"/>
+                        <swrl:argument1 rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasRegulatoryFramework"/>
+                                <swrl:argument1 rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#d"/>
+                                <swrl:argument2 rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#rf"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#IVDR"/>
+                                        <swrl:argument1 rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#rf"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#InVitroDiagnosticDevice"/>
+                        <swrl:argument1 rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Infers that corrective action has been taken for an incident when the linked corrective action has closed status</rdfs:comment>
+        <rdfs:label>Rule2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Incident"/>
+                        <swrl:argument1 rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#i"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasCorrectiveAction"/>
+                                <swrl:argument1 rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#i"/>
+                                <swrl:argument2 rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#hasStatus"/>
+                                        <swrl:argument1 rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#a"/>
+                                        <swrl:argument2 rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#s"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#Closed"/>
+                                                <swrl:argument1 rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#s"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#corrective_action_taken"/>
+                        <swrl:argument1 rdf:resource="http://www.uoc.edu/def/OntologiaDeDispositiusMedicsRegulatsPelMarcEuropeu#i"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
